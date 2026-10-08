@@ -4,6 +4,7 @@ import numpy as np
 import os
 import sys
 import time
+import io
 
 # Ensure project root is in sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -19,7 +20,7 @@ from backend.dashboard.dashboard_generator import DashboardGenerator
 from backend.reports.pdf_report import PDFReportGenerator
 from backend.reports.docx_report import DocxReportGenerator
 from backend.reports.excel_report import ExcelReportGenerator
-from backend.llm.client import LLMClient
+from backend.llm.client import LLMClient, get_secret
 
 # --- Streamlit Page Configuration ---
 st.set_page_config(
@@ -39,9 +40,9 @@ st.markdown("""
     .main-header {
         background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 50%, #3B82F6 100%);
         color: white;
-        padding: 26px 32px;
+        padding: 24px 30px;
         border-radius: 12px;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
         box-shadow: 0 4px 14px rgba(37, 99, 235, 0.15);
     }
     .main-header h1 {
@@ -55,18 +56,12 @@ st.markdown("""
         font-size: 1.05rem;
         margin: 0;
     }
-    .metric-card {
-        background: #F8FAFC;
-        border: 1px solid #E2E8F0;
-        border-radius: 10px;
-        padding: 16px;
-        text-align: center;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-    }
     .pillar-card {
         border-radius: 8px;
         padding: 14px 18px;
         margin-bottom: 12px;
+        font-size: 0.95rem;
+        line-height: 1.5;
     }
     .fact-card {
         background-color: #EFF6FF;
@@ -95,29 +90,52 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# --- Robust Dataset Loader ---
+def load_dataset_safely(file_obj) -> pd.DataFrame:
+    """Read CSV or Excel files with multi-encoding and delimiter detection."""
+    filename = file_obj.name.lower()
+    file_obj.seek(0)
+    
+    if filename.endswith(".csv"):
+        encodings = ["utf-8", "utf-8-sig", "latin-1", "cp1252", "iso-8859-1"]
+        for enc in encodings:
+            try:
+                file_obj.seek(0)
+                df = pd.read_csv(file_obj, encoding=enc)
+                # If only 1 column detected, check if delimited by semicolon or tab
+                if len(df.columns) == 1 and len(df) > 0:
+                    file_obj.seek(0)
+                    df_semi = pd.read_csv(file_obj, encoding=enc, sep=";")
+                    if len(df_semi.columns) > 1:
+                        return df_semi
+                    file_obj.seek(0)
+                    df_tab = pd.read_csv(file_obj, encoding=enc, sep="\t")
+                    if len(df_tab.columns) > 1:
+                        return df_tab
+                return df
+            except Exception:
+                continue
+        # Fallback with error ignore
+        file_obj.seek(0)
+        return pd.read_csv(file_obj, encoding="latin-1", on_bad_lines="skip")
+    else:
+        file_obj.seek(0)
+        return pd.read_excel(file_obj)
+
 # --- Initialize Session State ---
-if "raw_df" not in st.session_state:
-    st.session_state.raw_df = None
-if "cleaned_df" not in st.session_state:
-    st.session_state.cleaned_df = None
-if "dataset_filename" not in st.session_state:
+for state_key in [
+    "raw_df", "cleaned_df", "dataset_filename", "current_file_signature",
+    "dataset_profile", "cleaning_audit", "analysis_history",
+    "active_results", "active_insights", "active_plan", "active_question",
+    "active_report_payload"
+]:
+    if state_key not in st.session_state:
+        st.session_state[state_key] = None if state_key not in ["analysis_history"] else []
+
+if not st.session_state.dataset_filename:
     st.session_state.dataset_filename = ""
-if "dataset_profile" not in st.session_state:
-    st.session_state.dataset_profile = None
-if "cleaning_audit" not in st.session_state:
-    st.session_state.cleaning_audit = None
-if "analysis_history" not in st.session_state:
-    st.session_state.analysis_history = []
-if "active_results" not in st.session_state:
-    st.session_state.active_results = None
-if "active_insights" not in st.session_state:
-    st.session_state.active_insights = None
-if "active_plan" not in st.session_state:
-    st.session_state.active_plan = None
-if "active_question" not in st.session_state:
+if not st.session_state.active_question:
     st.session_state.active_question = ""
-if "active_report_payload" not in st.session_state:
-    st.session_state.active_report_payload = None
 
 # --- SIDEBAR CONFIGURATION ---
 with st.sidebar:
@@ -131,50 +149,64 @@ with st.sidebar:
     uploaded_file = st.file_uploader(
         "Upload CSV or Excel file",
         type=["csv", "xlsx", "xls"],
-        help="Upload files up to 50MB. Safe session-only processing."
+        help="Upload datasets up to 50MB. Safe session-only processing."
     )
 
     st.markdown("**— OR Quick Load Demo Datasets —**")
     col_s1, col_s2 = st.columns(2)
     sample_to_load = None
     with col_s1:
-        if st.button("🛒 Superstore Sales", use_container_width=True):
+        if st.button("🛒 Superstore", use_container_width=True):
             sample_to_load = "backend/data/samples/superstore_sales.csv"
             sample_name = "superstore_sales.csv"
     with col_s2:
-        if st.button("🔄 Customer Churn", use_container_width=True):
+        if st.button("🔄 Churn SaaS", use_container_width=True):
             sample_to_load = "backend/data/samples/customer_churn.csv"
             sample_name = "customer_churn.csv"
 
-    # Handle dataset loading
+    # Handle Uploaded File with Signature Persistence
     if uploaded_file is not None:
-        try:
-            if uploaded_file.name.endswith(".csv"):
-                loaded_df = pd.read_csv(uploaded_file)
-            else:
-                loaded_df = pd.read_excel(uploaded_file)
-            st.session_state.raw_df = loaded_df
-            st.session_state.dataset_filename = uploaded_file.name
-            st.session_state.active_results = None
-            st.session_state.active_insights = None
-            st.success(f"Uploaded: {uploaded_file.name} ({len(loaded_df):,} rows)")
-        except Exception as e:
-            st.error(f"Error reading uploaded file: {e}")
+        file_sig = f"{uploaded_file.name}_{uploaded_file.size}"
+        if st.session_state.current_file_signature != file_sig:
+            try:
+                loaded_df = load_dataset_safely(uploaded_file)
+                st.session_state.raw_df = loaded_df
+                st.session_state.dataset_filename = uploaded_file.name
+                st.session_state.current_file_signature = file_sig
+                # Reset previous analysis state only when a brand new dataset is loaded
+                st.session_state.active_results = None
+                st.session_state.active_insights = None
+                st.session_state.active_plan = None
+                st.session_state.active_report_payload = None
+                st.session_state.dataset_profile = None
+                st.session_state.cleaned_df = None
+                st.session_state.cleaning_audit = None
+                st.toast(f"✅ Loaded {uploaded_file.name} ({len(loaded_df):,} rows)", icon="📂")
+            except Exception as e:
+                st.error(f"Error loading dataset: {e}")
 
     elif sample_to_load:
-        try:
-            loaded_df = pd.read_csv(sample_to_load)
-            st.session_state.raw_df = loaded_df
-            st.session_state.dataset_filename = sample_name
-            st.session_state.active_results = None
-            st.session_state.active_insights = None
-            st.success(f"Loaded: {sample_name} ({len(loaded_df):,} rows)")
-        except Exception as e:
-            st.error(f"Error reading sample dataset: {e}")
+        sample_sig = f"sample_{sample_name}"
+        if st.session_state.current_file_signature != sample_sig:
+            try:
+                loaded_df = pd.read_csv(sample_to_load)
+                st.session_state.raw_df = loaded_df
+                st.session_state.dataset_filename = sample_name
+                st.session_state.current_file_signature = sample_sig
+                st.session_state.active_results = None
+                st.session_state.active_insights = None
+                st.session_state.active_plan = None
+                st.session_state.active_report_payload = None
+                st.session_state.dataset_profile = None
+                st.session_state.cleaned_df = None
+                st.session_state.cleaning_audit = None
+                st.toast(f"✅ Loaded {sample_name} ({len(loaded_df):,} rows)", icon="🛒")
+            except Exception as e:
+                st.error(f"Error loading sample dataset: {e}")
 
     # Process profiling & cleaning if dataset present but profile absent
     if st.session_state.raw_df is not None:
-        if st.session_state.dataset_profile is None or st.session_state.dataset_profile.get("filename") != st.session_state.dataset_filename:
+        if st.session_state.dataset_profile is None:
             with st.spinner("Autonomous profiler analyzing dataset..."):
                 profiler = DataProfiler(st.session_state.raw_df, filename=st.session_state.dataset_filename)
                 st.session_state.dataset_profile = profiler.profile()
@@ -208,10 +240,18 @@ with st.sidebar:
 
     # 3. Settings & LLM Configuration
     with st.expander("⚙️ AI Engine Settings", expanded=False):
+        # Detect pre-configured keys in env or secrets
+        has_gemini = bool(get_secret("GEMINI_API_KEY") or get_secret("GOOGLE_API_KEY"))
+        has_groq = bool(get_secret("GROQ_API_KEY"))
+        has_openai = bool(get_secret("OPENAI_API_KEY"))
+
+        provider_options = ["Auto-Detect / Heuristic", "Google Gemini", "Groq", "OpenAI"]
+        default_idx = 1 if has_gemini else (2 if has_groq else (3 if has_openai else 0))
+
         llm_provider = st.selectbox(
-            "LLM Reasoning Engine",
-            ["Auto-Detect / Heuristic", "Google Gemini", "Groq", "OpenAI"],
-            index=0
+            "LLM Reasoning Provider",
+            provider_options,
+            index=default_idx
         )
         provider_map = {
             "Auto-Detect / Heuristic": "auto",
@@ -219,31 +259,54 @@ with st.sidebar:
             "Groq": "groq",
             "OpenAI": "openai"
         }
+
+        # Model options based on provider
+        selected_provider = provider_map[llm_provider]
+        if selected_provider == "gemini":
+            model_options = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-pro"]
+            selected_model = st.selectbox("Model", model_options, index=0)
+        elif selected_provider == "groq":
+            model_options = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "mixtral-8x7b-32768"]
+            selected_model = st.selectbox("Model", model_options, index=0)
+        elif selected_provider == "openai":
+            model_options = ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]
+            selected_model = st.selectbox("Model", model_options, index=0)
+        else:
+            selected_model = "heuristic-analyst-v1"
+
         api_key_input = st.text_input(
             "Custom API Key (Optional)",
             type="password",
-            help="If not provided, AutoAnalyst AI uses environment/Streamlit secrets or its built-in empirical heuristic engine."
+            help="Leave empty to use .env / Streamlit Secrets or the built-in Autonomous Heuristic Engine."
         )
         temperature = st.slider("Reasoning Temperature", 0.0, 1.0, 0.2, 0.05)
+
+        # Status badge
+        active_client = LLMClient(
+            provider=selected_provider,
+            api_key=api_key_input if api_key_input else None,
+            model=selected_model,
+            temperature=temperature
+        )
+        st.info(f"**Engine Status:** {active_client.get_status_info()['status']}")
 
     # 4. Analysis Session History
     if st.session_state.analysis_history:
         st.markdown("---")
         st.subheader("📜 Analysis History")
         for idx, h_item in enumerate(reversed(st.session_state.analysis_history[-5:])):
-            if st.button(f"🔍 {h_item['question'][:30]}...", key=f"hist_{idx}"):
+            if st.button(f"🔍 {h_item['question'][:28]}...", key=f"hist_{idx}", use_container_width=True):
                 st.session_state.active_question = h_item["question"]
                 st.session_state.active_plan = h_item["plan"]
                 st.session_state.active_results = h_item["results"]
                 st.session_state.active_insights = h_item["insights"]
                 st.session_state.active_report_payload = h_item["report_payload"]
-                st.rerun()
+                st.toast("Loaded previous analysis from history", icon="📜")
 
     # 5. About Project
     with st.expander("💡 About AutoAnalyst AI"):
         st.markdown("""
-        **AutoAnalyst AI** is an autonomous data analyst system.
-        
+        **AutoAnalyst AI** is an autonomous AI data analyst.
         - **Reasoning Layer:** LLM / Multi-Agent Planner
         - **Calculation Layer:** Python, Pandas, SQLite, SciPy, Scikit-learn
         - **Guaranteed Rigor:** Zero hallucination of statistics.
@@ -263,7 +326,7 @@ st.markdown("""
 
 # Check if dataset is loaded
 if st.session_state.raw_df is None:
-    st.info("👋 **Welcome to AutoAnalyst AI!** Please upload a CSV/Excel dataset from the sidebar or click one of the sample datasets to begin instant exploration.")
+    st.info("👋 **Welcome to AutoAnalyst AI!** Please upload a CSV/Excel dataset from the sidebar or click one of the demo datasets to begin instant exploration.")
     
     col1, col2 = st.columns(2)
     with col1:
@@ -312,50 +375,51 @@ with tab_overview:
         st.dataframe(col_types, use_container_width=True, hide_index=True)
 
 with tab_profiler:
-    dq = profile["data_quality"]
-    dims = profile["dimensions"]
+    if profile:
+        dq = profile["data_quality"]
+        dims = profile["dimensions"]
 
-    m1, m2, m3, m4, m5 = st.columns(5)
-    with m1:
-        st.metric("Total Rows", f"{dims['rows']:,}")
-    with m2:
-        st.metric("Total Columns", f"{dims['columns']}")
-    with m3:
-        st.metric("Quality Score", f"{dq['score']}/100", delta=dq['rating'])
-    with m4:
-        st.metric("Missing Cells", f"{dq['total_missing_cells']:,}", delta=f"{dq['overall_missing_pct']}%", delta_color="inverse")
-    with m5:
-        st.metric("Duplicate Rows", f"{dq['duplicate_rows']:,}", delta=f"{dq['duplicate_pct']}%", delta_color="inverse")
+        m1, m2, m3, m4, m5 = st.columns(5)
+        with m1:
+            st.metric("Total Rows", f"{dims['rows']:,}")
+        with m2:
+            st.metric("Total Columns", f"{dims['columns']}")
+        with m3:
+            st.metric("Quality Score", f"{dq['score']}/100", delta=dq['rating'])
+        with m4:
+            st.metric("Missing Cells", f"{dq['total_missing_cells']:,}", delta=f"{dq['overall_missing_pct']}%", delta_color="inverse")
+        with m5:
+            st.metric("Duplicate Rows", f"{dq['duplicate_rows']:,}", delta=f"{dq['duplicate_pct']}%", delta_color="inverse")
 
-    st.markdown("---")
-    col_p1, col_p2 = st.columns(2)
-    with col_p1:
-        st.markdown("##### 🔢 Numerical Distribution Overview")
-        if profile.get("numerical_statistics"):
-            num_stat_df = pd.DataFrame(profile["numerical_statistics"]).T[["mean", "std", "median", "min", "max", "skewness", "outliers_count"]]
-            st.dataframe(num_stat_df, use_container_width=True)
-        else:
-            st.info("No numerical columns detected.")
+        st.markdown("---")
+        col_p1, col_p2 = st.columns(2)
+        with col_p1:
+            st.markdown("##### 🔢 Numerical Distribution Overview")
+            if profile.get("numerical_statistics"):
+                num_stat_df = pd.DataFrame(profile["numerical_statistics"]).T[["mean", "std", "median", "min", "max", "skewness", "outliers_count"]]
+                st.dataframe(num_stat_df, use_container_width=True)
+            else:
+                st.info("No numerical columns detected.")
 
-    with col_p2:
-        st.markdown("##### 🔤 Categorical Breakdown")
-        if profile.get("categorical_statistics"):
-            cat_stat_rows = []
-            for col_name, c_info in profile["categorical_statistics"].items():
-                top_cats = ", ".join([f"{k} ({v})" for k, v in list(c_info["top_categories"].items())[:3]])
-                cat_stat_rows.append({
-                    "Column": col_name,
-                    "Unique Values": c_info["unique_count"],
-                    "Mode": c_info["mode"],
-                    "Top Categories": top_cats
-                })
-            st.dataframe(pd.DataFrame(cat_stat_rows), use_container_width=True, hide_index=True)
-        else:
-            st.info("No categorical columns detected.")
+        with col_p2:
+            st.markdown("##### 🔤 Categorical Breakdown")
+            if profile.get("categorical_statistics"):
+                cat_stat_rows = []
+                for col_name, c_info in profile["categorical_statistics"].items():
+                    top_cats = ", ".join([f"{k} ({v})" for k, v in list(c_info["top_categories"].items())[:3]])
+                    cat_stat_rows.append({
+                        "Column": col_name,
+                        "Unique Values": c_info["unique_count"],
+                        "Mode": c_info["mode"],
+                        "Top Categories": top_cats
+                    })
+                st.dataframe(pd.DataFrame(cat_stat_rows), use_container_width=True, hide_index=True)
+            else:
+                st.info("No categorical columns detected.")
 
-    if profile.get("top_correlations"):
-        st.markdown("##### 🔗 Notable Correlations (|r| > 0.3)")
-        st.dataframe(pd.DataFrame(profile["top_correlations"]), use_container_width=True, hide_index=True)
+        if profile.get("top_correlations"):
+            st.markdown("##### 🔗 Notable Correlations (|r| > 0.3)")
+            st.dataframe(pd.DataFrame(profile["top_correlations"]), use_container_width=True, hide_index=True)
 
 with tab_cleaning:
     audit = st.session_state.cleaning_audit
@@ -420,73 +484,77 @@ with col_btn1:
 # Execution Flow
 if analyze_clicked and user_query:
     st.session_state.active_question = user_query
-    progress_bar = st.progress(0)
-    status_text = st.empty()
+    status_container = st.container()
 
-    llm = LLMClient(
-        provider=provider_map[llm_provider],
-        api_key=api_key_input if api_key_input else None,
-        temperature=temperature
-    )
+    with status_container:
+        progress_bar = st.progress(0)
+        status_text = st.empty()
 
-    try:
-        # Step 1: Question Understanding
-        status_text.markdown("⏳ **Step 1/6:** Understanding dataset semantics & question intent...")
-        progress_bar.progress(15)
-        analyzer = QuestionAnalyzer(llm_client=llm)
-        intent_data = analyzer.analyze(user_query, profile)
+        llm = LLMClient(
+            provider=selected_provider,
+            api_key=api_key_input if api_key_input else None,
+            model=selected_model,
+            temperature=temperature
+        )
 
-        # Step 2: Planning
-        status_text.markdown("⏳ **Step 2/6:** Formulating multi-tool autonomous analysis plan...")
-        progress_bar.progress(35)
-        planner = AnalysisPlanner(llm_client=llm)
-        plan = planner.create_plan(user_query, intent_data, profile)
-        st.session_state.active_plan = plan
+        try:
+            # Step 1: Question Understanding
+            status_text.markdown("⏳ **Step 1/6:** Understanding dataset semantics & question intent...")
+            progress_bar.progress(15)
+            analyzer = QuestionAnalyzer(llm_client=llm)
+            intent_data = analyzer.analyze(user_query, profile)
 
-        # Step 3: Execution Layer
-        status_text.markdown("⏳ **Step 3/6:** Executing empirical computations (Pandas, Statistics, ML, Anomalies)...")
-        progress_bar.progress(55)
-        agent = AutonomousAnalystAgent(df_active)
-        exec_results = agent.execute_plan(plan)
-        st.session_state.active_results = exec_results
+            # Step 2: Planning
+            status_text.markdown("⏳ **Step 2/6:** Formulating multi-tool autonomous analysis plan...")
+            progress_bar.progress(35)
+            planner = AnalysisPlanner(llm_client=llm)
+            plan = planner.create_plan(user_query, intent_data, profile)
+            st.session_state.active_plan = plan
 
-        # Step 4: Visualizations
-        status_text.markdown("⏳ **Step 4/6:** Synthesizing question-specific interactive Plotly charts...")
-        progress_bar.progress(75)
+            # Step 3: Execution Layer
+            status_text.markdown("⏳ **Step 3/6:** Executing empirical computations (Pandas, Statistics, ML, Anomalies)...")
+            progress_bar.progress(55)
+            agent = AutonomousAnalystAgent(df_active)
+            exec_results = agent.execute_plan(plan)
+            st.session_state.active_results = exec_results
 
-        # Step 5: Insights
-        status_text.markdown("⏳ **Step 5/6:** Generating four-pillar grounded business insights with RAG guidance...")
-        progress_bar.progress(90)
-        insight_agent = InsightAgent(llm_client=llm)
-        insights = insight_agent.generate_insights(user_query, exec_results)
-        st.session_state.active_insights = insights
+            # Step 4: Visualizations
+            status_text.markdown("⏳ **Step 4/6:** Synthesizing question-specific interactive Plotly charts...")
+            progress_bar.progress(75)
 
-        # Step 6: Compile Report Payload
-        status_text.markdown("⏳ **Step 6/6:** Finalizing dynamic dashboard and report artifacts...")
-        progress_bar.progress(100)
-        report_agent = ReportAgent()
-        report_payload = report_agent.compile_report(user_query, profile, plan, exec_results, insights)
-        st.session_state.active_report_payload = report_payload
+            # Step 5: Insights
+            status_text.markdown("⏳ **Step 5/6:** Generating four-pillar grounded business insights with RAG guidance...")
+            progress_bar.progress(90)
+            insight_agent = InsightAgent(llm_client=llm)
+            insights = insight_agent.generate_insights(user_query, exec_results)
+            st.session_state.active_insights = insights
 
-        # Save to history
-        st.session_state.analysis_history.append({
-            "question": user_query,
-            "plan": plan,
-            "results": exec_results,
-            "insights": insights,
-            "report_payload": report_payload,
-            "timestamp": time.strftime("%H:%M:%S")
-        })
+            # Step 6: Compile Report Payload
+            status_text.markdown("⏳ **Step 6/6:** Finalizing dynamic dashboard and report artifacts...")
+            progress_bar.progress(100)
+            report_agent = ReportAgent()
+            report_payload = report_agent.compile_report(user_query, profile, plan, exec_results, insights)
+            st.session_state.active_report_payload = report_payload
 
-        time.sleep(0.5)
-        status_text.empty()
-        progress_bar.empty()
-        st.rerun()
+            # Save to history
+            st.session_state.analysis_history.append({
+                "question": user_query,
+                "plan": plan,
+                "results": exec_results,
+                "insights": insights,
+                "report_payload": report_payload,
+                "timestamp": time.strftime("%H:%M:%S")
+            })
 
-    except Exception as e:
-        status_text.empty()
-        progress_bar.empty()
-        st.error(f"Analysis Error: {str(e)}")
+            time.sleep(0.3)
+            status_text.empty()
+            progress_bar.empty()
+            st.toast("🎉 Autonomous analysis complete!", icon="✅")
+
+        except Exception as e:
+            status_text.empty()
+            progress_bar.empty()
+            st.error(f"Analysis Error: {str(e)}")
 
 # --- DISPLAY ACTIVE ANALYSIS RESULTS ---
 if st.session_state.active_results is not None:
@@ -497,15 +565,16 @@ if st.session_state.active_results is not None:
     report_payload = st.session_state.active_report_payload
 
     # Analysis Plan Accordion
-    with st.expander("📝 View Autonomous Analysis Plan", expanded=False):
-        st.markdown(f"**Intent:** `{plan.get('intent')}` | **Focal Metric:** `{plan.get('focal_metric')}` | **Focal Dimension:** `{plan.get('focal_dimension')}`")
-        st.markdown("**Execution Steps:**")
-        for step in plan.get("execution_steps", []):
-            st.markdown(f"{step['step_id']}. **{step['title']}** (`{step['tool']}`) — {step['action']}")
-        if plan.get("hypotheses_to_test"):
-            st.markdown("**Hypotheses Evaluated:**")
-            for h in plan["hypotheses_to_test"]:
-                st.markdown(f"- *{h}*")
+    if plan:
+        with st.expander("📝 View Autonomous Analysis Plan", expanded=False):
+            st.markdown(f"**Intent:** `{plan.get('intent')}` | **Focal Metric:** `{plan.get('focal_metric')}` | **Focal Dimension:** `{plan.get('focal_dimension')}`")
+            st.markdown("**Execution Steps:**")
+            for step in plan.get("execution_steps", []):
+                st.markdown(f"{step['step_id']}. **{step['title']}** (`{step['tool']}`) — {step['action']}")
+            if plan.get("hypotheses_to_test"):
+                st.markdown("**Hypotheses Evaluated:**")
+                for h in plan["hypotheses_to_test"]:
+                    st.markdown(f"- *{h}*")
 
     st.markdown("---")
 
@@ -516,93 +585,95 @@ if st.session_state.active_results is not None:
     st.markdown("---")
 
     # Four Pillars of Grounded Findings
-    st.markdown("### 🧠 AI Insights & Strategic Synthesis")
-    col_i1, col_i2 = st.columns(2)
+    if insights:
+        st.markdown("### 🧠 AI Insights & Strategic Synthesis")
+        col_i1, col_i2 = st.columns(2)
 
-    with col_i1:
-        st.markdown("#### 📌 1. Observed Facts (Computed)")
-        for fact in insights.get("observed_facts", []):
-            st.markdown(f"<div class='pillar-card fact-card'><b>Empirical Fact:</b> {fact}</div>", unsafe_allow_html=True)
+        with col_i1:
+            st.markdown("#### 📌 1. Observed Facts (Computed)")
+            for fact in insights.get("observed_facts", []):
+                st.markdown(f"<div class='pillar-card fact-card'><b>Empirical Fact:</b> {fact}</div>", unsafe_allow_html=True)
 
-        st.markdown("#### 📐 2. Statistical Findings")
-        for stat in insights.get("statistical_findings", []):
-            st.markdown(f"<div class='pillar-card stat-card'><b>Statistical Rigor:</b> {stat}</div>", unsafe_allow_html=True)
+            st.markdown("#### 📐 2. Statistical Findings")
+            for stat in insights.get("statistical_findings", []):
+                st.markdown(f"<div class='pillar-card stat-card'><b>Statistical Rigor:</b> {stat}</div>", unsafe_allow_html=True)
 
-    with col_i2:
-        st.markdown("#### 💡 3. AI Interpretations")
-        for interp in insights.get("ai_interpretations", []):
-            st.markdown(f"<div class='pillar-card interp-card'><b>Analytical Rationale:</b> {interp}</div>", unsafe_allow_html=True)
+        with col_i2:
+            st.markdown("#### 💡 3. AI Interpretations")
+            for interp in insights.get("ai_interpretations", []):
+                st.markdown(f"<div class='pillar-card interp-card'><b>Analytical Rationale:</b> {interp}</div>", unsafe_allow_html=True)
 
-        st.markdown("#### 🎯 4. Strategic Recommendations")
-        for rec in insights.get("recommendations", []):
-            st.markdown(f"<div class='pillar-card rec-card'><b>Recommended Action:</b> {rec}</div>", unsafe_allow_html=True)
+            st.markdown("#### 🎯 4. Strategic Recommendations")
+            for rec in insights.get("recommendations", []):
+                st.markdown(f"<div class='pillar-card rec-card'><b>Recommended Action:</b> {rec}</div>", unsafe_allow_html=True)
 
-    if insights.get("limitations"):
-        st.caption(f"**Analytical Caveats:** {insights['limitations']}")
+        if insights.get("limitations"):
+            st.caption(f"**Analytical Caveats:** {insights['limitations']}")
 
     st.markdown("---")
 
     # --- REPORT EXPORT SECTION ---
-    st.markdown("### 📥 Export Executive Analysis Report")
-    st.caption("Generate publication-ready PDF, Word (DOCX), or Excel reports containing all computed metrics, findings, and recommendations.")
+    if report_payload:
+        st.markdown("### 📥 Export Executive Analysis Report")
+        st.caption("Generate publication-ready PDF, Word (DOCX), or Excel reports containing all computed metrics, findings, and recommendations.")
 
-    col_exp1, col_exp2, col_exp3, col_exp4 = st.columns(4)
+        col_exp1, col_exp2, col_exp3, col_exp4 = st.columns(4)
 
-    # 1. PDF Report Download
-    with col_exp1:
-        try:
-            pdf_gen = PDFReportGenerator()
-            pdf_bytes = pdf_gen.generate(report_payload)
+        # 1. PDF Report Download
+        with col_exp1:
+            try:
+                pdf_gen = PDFReportGenerator()
+                pdf_bytes = pdf_gen.generate(report_payload)
+                st.download_button(
+                    label="📄 Download PDF Report",
+                    data=pdf_bytes,
+                    file_name=f"AutoAnalyst_Report_{int(time.time())}.pdf",
+                    mime="application/pdf",
+                    use_container_width=True
+                )
+            except Exception as e:
+                st.button("📄 PDF Export Note", disabled=True, use_container_width=True)
+
+        # 2. DOCX Report Download
+        with col_exp2:
+            try:
+                docx_gen = DocxReportGenerator()
+                docx_bytes = docx_gen.generate(report_payload)
+                st.download_button(
+                    label="📝 Download Word (.docx)",
+                    data=docx_bytes,
+                    file_name=f"AutoAnalyst_Report_{int(time.time())}.docx",
+                    mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    use_container_width=True
+                )
+            except Exception as e:
+                st.button("📝 DOCX Export Note", disabled=True, use_container_width=True)
+
+        # 3. Excel Multi-Tab Report Download
+        with col_exp3:
+            try:
+                excel_gen = ExcelReportGenerator()
+                excel_bytes = excel_gen.generate(report_payload, raw_df=df_active)
+                st.download_button(
+                    label="📊 Download Excel Report",
+                    data=excel_bytes,
+                    file_name=f"AutoAnalyst_DataReport_{int(time.time())}.xlsx",
+                    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    use_container_width=True
+                )
+            except Exception as e:
+                st.button("📊 Excel Export Note", disabled=True, use_container_width=True)
+
+        # 4. Cleaned Dataset Download
+        with col_exp4:
+            clean_csv = df_active.to_csv(index=False).encode('utf-8')
             st.download_button(
-                label="📄 Download PDF Report",
-                data=pdf_bytes,
-                file_name=f"AutoAnalyst_Report_{int(time.time())}.pdf",
-                mime="application/pdf",
+                label="💾 Download Cleaned CSV",
+                data=clean_csv,
+                file_name=f"cleaned_{st.session_state.dataset_filename}",
+                mime="text/csv",
                 use_container_width=True
             )
-        except Exception as e:
-            st.button("📄 PDF Export Error", disabled=True, use_container_width=True)
-
-    # 2. DOCX Report Download
-    with col_exp2:
-        try:
-            docx_gen = DocxReportGenerator()
-            docx_bytes = docx_gen.generate(report_payload)
-            st.download_button(
-                label="📝 Download Word (.docx)",
-                data=docx_bytes,
-                file_name=f"AutoAnalyst_Report_{int(time.time())}.docx",
-                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                use_container_width=True
-            )
-        except Exception as e:
-            st.button("📝 DOCX Export Error", disabled=True, use_container_width=True)
-
-    # 3. Excel Multi-Tab Report Download
-    with col_exp3:
-        try:
-            excel_gen = ExcelReportGenerator()
-            excel_bytes = excel_gen.generate(report_payload, raw_df=df_active)
-            st.download_button(
-                label="📊 Download Excel Report",
-                data=excel_bytes,
-                file_name=f"AutoAnalyst_DataReport_{int(time.time())}.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                use_container_width=True
-            )
-        except Exception as e:
-            st.button("📊 Excel Export Error", disabled=True, use_container_width=True)
-
-    # 4. Cleaned Dataset Download
-    with col_exp4:
-        clean_csv = df_active.to_csv(index=False).encode('utf-8')
-        st.download_button(
-            label="💾 Download Cleaned CSV",
-            data=clean_csv,
-            file_name=f"cleaned_{st.session_state.dataset_filename}",
-            mime="text/csv",
-            use_container_width=True
-        )
 
     st.markdown("---")
 
@@ -619,4 +690,4 @@ if st.session_state.active_results is not None:
     if st.button("💬 Send Follow-up"):
         if follow_up_query:
             st.session_state.active_question = f"{q} -> Follow-up: {follow_up_query}"
-            st.rerun()
+            st.toast("Ready to analyze follow-up question. Click 'Analyze Dataset' above.", icon="🔄")

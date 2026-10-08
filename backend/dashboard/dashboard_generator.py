@@ -27,9 +27,11 @@ class DashboardGenerator:
         focal_metric = plan.get("focal_metric")
 
         st.markdown(f"### 📊 Dynamic Dashboard: *\"{question}\"*")
+        
+        exec_sum = insights.get('executive_summary', 'Automated dashboard synthesized from empirical data.') if insights else 'Analysis complete.'
         st.markdown(
             f"<div style='background: #F8FAFC; border-left: 4px solid #2563EB; padding: 12px 16px; border-radius: 6px; margin-bottom: 20px; color: #334155; font-size: 0.95rem;'>"
-            f"<b>Executive Summary:</b> {insights.get('executive_summary', 'Automated dashboard synthesized from empirical data.')}"
+            f"<b>Executive Summary:</b> {exec_sum}"
             f"</div>",
             unsafe_allow_html=True
         )
@@ -40,18 +42,21 @@ class DashboardGenerator:
         st.markdown("---")
 
         # 2. Interactive Charts Section
-        chart_keys = list(charts.keys())
+        valid_charts = {k: v for k, v in charts.items() if v is not None}
+        chart_keys = list(valid_charts.keys())
+
         if len(chart_keys) == 1:
-            st.plotly_chart(charts[chart_keys[0]], use_container_width=True)
+            self._safe_plot(valid_charts[chart_keys[0]])
         elif len(chart_keys) >= 2:
             col1, col2 = st.columns(2)
             with col1:
-                st.plotly_chart(charts[chart_keys[0]], use_container_width=True)
+                self._safe_plot(valid_charts[chart_keys[0]])
             with col2:
-                st.plotly_chart(charts[chart_keys[1]], use_container_width=True)
+                self._safe_plot(valid_charts[chart_keys[1]])
 
         if len(chart_keys) >= 3:
-            st.plotly_chart(charts[chart_keys[2]], use_container_width=True)
+            for extra_key in chart_keys[2:]:
+                self._safe_plot(valid_charts[extra_key])
 
         # 3. Dynamic Filter & Data Slice Drill-Down
         with st.expander("🔍 Interactive Data Slice & Drill-Down Explorer", expanded=False):
@@ -67,6 +72,14 @@ class DashboardGenerator:
                 top_anoms = anomalies.get("top_anomalies", [])
                 if top_anoms:
                     st.dataframe(pd.DataFrame(top_anoms), use_container_width=True)
+
+    def _safe_plot(self, fig):
+        """Safely render Plotly chart with error protection."""
+        if fig is not None:
+            try:
+                st.plotly_chart(fig, use_container_width=True)
+            except Exception as e:
+                st.info(f"Visual representation note: {e}")
 
     def _render_kpi_row(self, kpis: Dict[str, Any]):
         """Render responsive KPI metric cards."""
@@ -149,7 +162,7 @@ class DashboardGenerator:
                 if selected_vals:
                     filter_df = filter_df[filter_df[focal_dim].isin(selected_vals)]
 
-        st.markdown(f"**Showing {len(filter_df)} records:**")
+        st.markdown(f"**Showing {len(filter_df):,} records:**")
         st.dataframe(filter_df.head(100), use_container_width=True)
 
         # Download button for filtered slice

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Environment & Secrets
+.env
+.env.local
+.streamlit/secrets.toml
+
+# Chroma & Cache
+.cache/
+chroma_data/
+*.db
+*.sqlite3
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# User data
+temp/
+scratch/

@@ -1,0 +1,1201 @@
+order_id,order_date,customer_id,customer_segment,region,category,sub_category,sales,quantity,discount,profit
+ORD-2023-1000,2023-09-27,CUST-216,Corporate,West,Office Supplies,Storage,68.84,3,0.1,14.11
+ORD-2023-1001,2024-03-08,CUST-260,Home Office,West,Office Supplies,Fasteners,27.15,6,0.7,-6.65
+ORD-2023-1002,2023-08-08,CUST-348,Corporate,North,Furniture,Furnishings,216.57,3,0.7,-92.04
+ORD-2023-1003,2023-02-03,CUST-108,Consumer,East,Furniture,Chairs,3059.06,9,0.3,-382.38
+ORD-2023-1004,2023-01-12,CUST-263,Consumer,South,Technology,Printers,703.17,8,0.5,-94.93
+ORD-2023-1005,2023-05-12,CUST-289,Consumer,East,Office Supplies,Paper,96.39,2,0.5,-9.16
+ORD-2023-1006,2024-10-29,CUST-316,Consumer,North,Office Supplies,Art,129.0,2,0.1,26.45
+ORD-2023-1007,2023-07-22,CUST-335,Consumer,South,Furniture,Chairs,3560.35,9,0.2,-178.02
+ORD-2023-1008,2023-07-31,CUST-349,Corporate,East,Technology,Accessories,302.23,1,0.5,-40.8
+ORD-2023-1009,2023-03-25,CUST-271,Consumer,South,Office Supplies,Art,477.28,7,0.2,62.05
+ORD-2023-1010,2024-04-04,CUST-241,Home Office,South,Office Supplies,Binders,256.18,3,0.1,52.52
+ORD-2023-1011,2023-12-22,CUST-151,Consumer,North,Furniture,Bookcases,251.64,3,0.1,6.29
+ORD-2023-1012,2024-02-10,CUST-342,Consumer,North,Office Supplies,Fasteners,410.4,4,0.1,84.13
+ORD-2023-1013,2023-04-27,CUST-349,Consumer,South,Office Supplies,Fasteners,391.39,4,0.1,80.23
+ORD-2023-1014,2023-03-29,CUST-202,Consumer,North,Furniture,Tables,2668.47,9,0.3,-333.56
+ORD-2023-1015,2023-04-29,CUST-195,Consumer,North,Furniture,Tables,3808.18,8,0.0,380.82
+ORD-2023-1016,2024-02-06,CUST-212,Home Office,West,Furniture,Tables,2021.91,7,0.0,202.19
+ORD-2023-1017,2024-12-19,CUST-225,Consumer,East,Technology,Laptops,1839.62,5,0.1,303.54
+ORD-2023-1018,2023-04-15,CUST-137,Corporate,East,Furniture,Furnishings,2799.16,7,0.0,279.92
+ORD-2023-1019,2023-09-22,CUST-307,Home Office,South,Furniture,Tables,128.97,1,0.1,3.22
+ORD-2023-1020,2023-01-30,CUST-332,Corporate,North,Furniture,Bookcases,679.32,3,0.0,67.93
+ORD-2023-1021,2024-05-12,CUST-321,Corporate,West,Furniture,Tables,574.46,9,0.5,-157.98
+ORD-2023-1022,2024-05-15,CUST-239,Corporate,West,Technology,Printers,331.39,1,0.0,79.53
+ORD-2023-1023,2024-02-06,CUST-260,Corporate,South,Office Supplies,Binders,283.27,3,0.1,58.07
+ORD-2023-1024,2024-04-07,CUST-252,Corporate,West,Technology,Printers,643.82,3,0.5,-86.92
+ORD-2023-1025,2023-01-04,CUST-241,Consumer,East,Technology,Laptops,2537.5,9,0.0,609.0
+ORD-2023-1026,2023-08-23,CUST-257,Corporate,East,Office Supplies,Storage,245.44,3,0.0,68.72
+ORD-2023-1027,2024-12-01,CUST-291,Consumer,West,Furniture,Tables,1309.98,5,0.1,32.75
+ORD-2023-1028,2024-09-14,CUST-257,Consumer,South,Technology,Printers,54.81,1,0.7,-15.62
+ORD-2023-1029,2024-11-17,CUST-287,Home Office,East,Office Supplies,Storage,65.74,1,0.1,13.48
+ORD-2023-1030,2024-09-06,CUST-322,Consumer,North,Technology,Phones,748.22,3,0.1,123.46
+ORD-2023-1031,2024-08-30,CUST-317,Home Office,East,Office Supplies,Paper,83.37,2,0.0,23.34
+ORD-2023-1032,2024-06-17,CUST-251,Corporate,East,Office Supplies,Storage,413.54,7,0.0,115.79
+ORD-2023-1033,2024-10-19,CUST-303,Consumer,East,Furniture,Chairs,2398.89,8,0.2,-119.94
+ORD-2023-1034,2024-09-30,CUST-289,Corporate,North,Technology,Laptops,2376.69,6,0.0,570.41
+ORD-2023-1035,2023-07-26,CUST-107,Consumer,South,Furniture,Tables,1833.45,6,0.0,183.35
+ORD-2023-1036,2024-07-08,CUST-267,Home Office,East,Technology,Phones,1467.25,4,0.2,132.05
+ORD-2023-1037,2024-06-06,CUST-282,Consumer,East,Office Supplies,Art,312.75,8,0.1,64.11
+ORD-2023-1038,2023-06-30,CUST-338,Corporate,West,Technology,Laptops,484.11,5,0.5,-65.35
+ORD-2023-1039,2023-06-30,CUST-290,Home Office,North,Furniture,Furnishings,384.83,1,0.2,-19.24
+ORD-2023-1040,2023-11-10,CUST-319,Consumer,North,Office Supplies,Storage,138.09,5,0.0,38.67
+ORD-2023-1041,2023-02-03,CUST-321,Consumer,West,Technology,Laptops,2525.52,5,0.0,606.12
+ORD-2023-1042,2024-04-12,CUST-168,Consumer,East,Technology,Laptops,1107.44,3,0.3,-1550.42
+ORD-2023-1043,2024-05-07,CUST-223,Consumer,East,Furniture,Furnishings,1286.8,4,0.0,128.68
+ORD-2023-1044,2023-04-03,CUST-128,Consumer,West,Office Supplies,Storage,83.41,1,0.0,23.35
+ORD-2023-1045,2023-02-19,CUST-253,Corporate,North,Technology,Laptops,1423.74,7,0.0,341.7
+ORD-2023-1046,2024-05-05,CUST-219,Consumer,South,Technology,Accessories,1028.13,5,0.5,-138.8
+ORD-2023-1047,2024-06-13,CUST-339,Consumer,East,Office Supplies,Binders,239.32,8,0.7,-58.63
+ORD-2023-1048,2023-04-02,CUST-122,Home Office,South,Technology,Printers,1315.79,5,0.2,118.42
+ORD-2023-1049,2024-06-27,CUST-276,Consumer,East,Technology,Phones,2457.23,9,0.3,36.86
+ORD-2023-1050,2023-02-08,CUST-216,Consumer,North,Office Supplies,Storage,270.76,4,0.1,55.51
+ORD-2023-1051,2023-03-08,CUST-280,Corporate,East,Furniture,Furnishings,2857.01,7,0.0,285.7
+ORD-2023-1052,2023-12-22,CUST-285,Corporate,North,Technology,Accessories,1402.38,2,0.2,126.21
+ORD-2023-1053,2024-03-21,CUST-104,Consumer,South,Technology,Accessories,5518.04,9,0.2,496.62
+ORD-2023-1054,2024-01-05,CUST-144,Consumer,South,Technology,Printers,655.03,4,0.5,-88.43
+ORD-2023-1055,2024-06-26,CUST-138,Consumer,East,Furniture,Bookcases,903.61,7,0.5,-248.49
+ORD-2023-1056,2023-11-09,CUST-100,Consumer,East,Technology,Laptops,1714.64,8,0.1,282.92
+ORD-2023-1057,2024-05-05,CUST-157,Consumer,South,Technology,Phones,3933.2,8,0.1,648.98
+ORD-2023-1058,2023-01-09,CUST-326,Consumer,South,Office Supplies,Fasteners,596.31,5,0.0,166.97
+ORD-2023-1059,2024-05-15,CUST-243,Corporate,East,Technology,Accessories,558.6,1,0.1,92.17
+ORD-2023-1060,2024-06-14,CUST-191,Home Office,West,Office Supplies,Paper,640.91,8,0.0,179.45
+ORD-2023-1061,2024-04-10,CUST-290,Consumer,East,Furniture,Furnishings,1532.35,9,0.1,38.31
+ORD-2023-1062,2024-01-21,CUST-296,Consumer,East,Technology,Printers,1150.35,3,0.5,-155.3
+ORD-2023-1063,2024-03-17,CUST-164,Corporate,West,Furniture,Furnishings,455.37,5,0.0,45.54
+ORD-2023-1064,2023-12-12,CUST-260,Consumer,East,Office Supplies,Storage,551.14,6,0.1,112.98
+ORD-2023-1065,2023-12-04,CUST-102,Consumer,North,Furniture,Chairs,243.54,1,0.2,-12.18
+ORD-2023-1066,2024-02-04,CUST-150,Consumer,West,Office Supplies,Fasteners,311.54,5,0.0,87.23
+ORD-2023-1067,2023-07-17,CUST-281,Corporate,East,Technology,Phones,1199.8,8,0.1,197.97
+ORD-2023-1068,2024-07-10,CUST-250,Home Office,West,Furniture,Furnishings,2655.03,9,0.1,66.38
+ORD-2023-1069,2024-06-27,CUST-129,Home Office,West,Furniture,Tables,409.04,2,0.1,10.23
+ORD-2023-1070,2024-02-04,CUST-205,Corporate,South,Technology,Laptops,6662.83,8,0.0,1599.08
+ORD-2023-1071,2024-09-12,CUST-133,Home Office,East,Office Supplies,Art,37.9,1,0.1,7.77
+ORD-2023-1072,2024-03-22,CUST-179,Consumer,East,Technology,Laptops,1492.96,3,0.1,246.34
+ORD-2023-1073,2023-04-20,CUST-192,Corporate,North,Technology,Printers,6662.99,9,0.1,1099.39
+ORD-2023-1074,2024-12-01,CUST-332,Consumer,North,Furniture,Bookcases,703.53,6,0.0,70.35
+ORD-2023-1075,2023-09-14,CUST-313,Corporate,East,Office Supplies,Binders,199.99,9,0.1,41.0
+ORD-2023-1076,2023-02-28,CUST-306,Home Office,North,Office Supplies,Fasteners,748.54,8,0.0,209.59
+ORD-2023-1077,2024-01-22,CUST-155,Corporate,West,Office Supplies,Paper,186.97,2,0.0,52.35
+ORD-2023-1078,2023-04-06,CUST-316,Consumer,East,Office Supplies,Storage,425.55,6,0.0,119.15
+ORD-2023-1079,2024-06-14,CUST-167,Consumer,South,Technology,Accessories,6624.95,9,0.1,1093.12
+ORD-2023-1080,2023-09-13,CUST-335,Corporate,North,Furniture,Tables,565.65,2,0.1,14.14
+ORD-2023-1081,2023-04-02,CUST-220,Corporate,West,Technology,Laptops,4189.49,8,0.0,1005.48
+ORD-2023-1082,2023-06-20,CUST-342,Consumer,South,Technology,Laptops,6580.59,8,0.0,1579.34
+ORD-2023-1083,2023-01-14,CUST-329,Home Office,East,Office Supplies,Paper,633.86,6,0.1,129.94
+ORD-2023-1084,2024-04-26,CUST-118,Consumer,East,Office Supplies,Storage,173.2,5,0.0,48.5
+ORD-2023-1085,2023-05-24,CUST-199,Corporate,North,Office Supplies,Art,456.18,6,0.0,127.73
+ORD-2023-1086,2023-08-19,CUST-267,Consumer,South,Furniture,Tables,2173.83,7,0.0,217.38
+ORD-2023-1087,2024-08-06,CUST-194,Consumer,North,Technology,Phones,3869.29,8,0.2,348.24
+ORD-2023-1088,2024-10-31,CUST-100,Home Office,South,Office Supplies,Art,328.73,9,0.0,92.04
+ORD-2023-1089,2024-06-17,CUST-312,Home Office,West,Furniture,Furnishings,823.42,5,0.0,82.34
+ORD-2023-1090,2023-05-15,CUST-203,Consumer,East,Technology,Laptops,5364.12,9,0.1,885.08
+ORD-2023-1091,2023-09-29,CUST-346,Consumer,East,Furniture,Tables,124.27,1,0.3,-15.53
+ORD-2023-1092,2024-01-18,CUST-141,Consumer,East,Technology,Printers,1918.14,6,0.2,172.63
+ORD-2023-1093,2023-04-11,CUST-328,Corporate,East,Office Supplies,Fasteners,383.22,4,0.2,49.82
+ORD-2023-1094,2024-07-14,CUST-146,Corporate,East,Technology,Printers,204.47,1,0.1,33.74
+ORD-2023-1095,2024-09-01,CUST-194,Corporate,East,Technology,Printers,2213.41,4,0.2,199.21
+ORD-2023-1096,2024-03-06,CUST-146,Consumer,South,Furniture,Tables,2340.18,8,0.1,58.5
+ORD-2023-1097,2023-07-27,CUST-270,Corporate,East,Furniture,Tables,1350.19,9,0.2,-67.51
+ORD-2023-1098,2024-11-02,CUST-345,Consumer,West,Furniture,Furnishings,289.84,1,0.1,7.25
+ORD-2023-1099,2023-02-25,CUST-281,Consumer,West,Technology,Phones,3110.21,5,0.3,46.65
+ORD-2023-1100,2024-08-25,CUST-301,Corporate,East,Technology,Laptops,1737.92,5,0.2,156.41
+ORD-2023-1101,2024-08-01,CUST-261,Consumer,North,Technology,Phones,2458.56,6,0.0,590.05
+ORD-2023-1102,2024-10-23,CUST-344,Consumer,East,Furniture,Bookcases,2580.84,8,0.0,258.08
+ORD-2023-1103,2024-10-20,CUST-183,Consumer,South,Furniture,Bookcases,717.37,2,0.0,71.74
+ORD-2023-1104,2023-11-27,CUST-321,Home Office,North,Furniture,Tables,205.83,1,0.0,20.58
+ORD-2023-1105,2024-06-23,CUST-267,Consumer,South,Technology,Accessories,159.67,1,0.1,26.35
+ORD-2023-1106,2024-02-27,CUST-162,Corporate,East,Technology,Accessories,405.52,1,0.1,66.91
+ORD-2023-1107,2023-03-16,CUST-186,Consumer,West,Technology,Accessories,1709.1,3,0.1,282.0
+ORD-2023-1108,2024-12-05,CUST-171,Corporate,South,Office Supplies,Fasteners,94.23,3,0.2,12.25
+ORD-2023-1109,2023-03-16,CUST-177,Corporate,West,Office Supplies,Storage,203.53,8,0.0,56.99
+ORD-2023-1110,2024-03-10,CUST-106,Consumer,West,Office Supplies,Art,763.81,7,0.0,213.87
+ORD-2023-1111,2024-06-13,CUST-247,Corporate,West,Office Supplies,Fasteners,152.22,2,0.3,8.37
+ORD-2023-1112,2023-08-30,CUST-236,Consumer,East,Office Supplies,Storage,204.98,5,0.2,26.65
+ORD-2023-1113,2023-11-11,CUST-337,Corporate,West,Technology,Printers,721.22,1,0.1,119.0
+ORD-2023-1114,2023-12-06,CUST-300,Consumer,North,Technology,Laptops,4853.77,8,0.1,800.87
+ORD-2023-1115,2023-04-11,CUST-245,Home Office,North,Office Supplies,Art,87.18,2,0.0,24.41
+ORD-2023-1116,2024-01-17,CUST-216,Corporate,South,Office Supplies,Binders,484.08,9,0.2,62.93
+ORD-2023-1117,2023-01-08,CUST-298,Corporate,South,Technology,Phones,960.62,2,0.2,86.46
+ORD-2023-1118,2024-02-17,CUST-150,Corporate,South,Office Supplies,Fasteners,51.94,2,0.2,6.75
+ORD-2023-1119,2023-03-07,CUST-326,Consumer,South,Office Supplies,Fasteners,362.0,4,0.0,101.36
+ORD-2023-1120,2024-11-14,CUST-310,Corporate,West,Furniture,Furnishings,174.03,1,0.1,4.35
+ORD-2023-1121,2024-03-04,CUST-300,Consumer,West,Technology,Laptops,6553.66,9,0.0,1572.88
+ORD-2023-1122,2023-09-11,CUST-207,Consumer,East,Furniture,Chairs,783.24,7,0.0,78.32
+ORD-2023-1123,2024-05-15,CUST-154,Consumer,North,Technology,Laptops,126.31,1,0.5,-17.05
+ORD-2023-1124,2024-01-11,CUST-307,Corporate,West,Technology,Printers,2877.11,5,0.2,258.94
+ORD-2023-1125,2024-09-03,CUST-109,Corporate,East,Technology,Phones,7722.4,9,0.0,1853.38
+ORD-2023-1126,2024-02-28,CUST-171,Home Office,East,Office Supplies,Paper,458.79,5,0.0,128.46
+ORD-2023-1127,2024-11-30,CUST-116,Consumer,East,Office Supplies,Paper,101.86,3,0.3,5.6
+ORD-2023-1128,2024-04-13,CUST-314,Consumer,North,Furniture,Furnishings,1362.2,5,0.1,34.05
+ORD-2023-1129,2023-02-17,CUST-207,Corporate,East,Technology,Phones,972.23,2,0.1,160.42
+ORD-2023-1130,2023-06-17,CUST-138,Consumer,West,Technology,Laptops,1366.88,2,0.2,123.02
+ORD-2023-1131,2023-01-07,CUST-220,Consumer,South,Technology,Phones,5270.11,9,0.0,1264.83
+ORD-2023-1132,2024-07-07,CUST-257,Corporate,East,Furniture,Bookcases,126.4,1,0.0,12.64
+ORD-2023-1133,2024-09-06,CUST-295,Consumer,North,Office Supplies,Fasteners,238.45,9,0.0,66.77
+ORD-2023-1134,2023-06-07,CUST-110,Corporate,South,Office Supplies,Fasteners,375.58,7,0.5,-35.68
+ORD-2023-1135,2024-10-12,CUST-173,Consumer,North,Office Supplies,Art,425.59,6,0.1,87.25
+ORD-2023-1136,2023-02-03,CUST-314,Corporate,North,Furniture,Chairs,2248.15,6,0.1,56.2
+ORD-2023-1137,2024-09-28,CUST-315,Consumer,East,Office Supplies,Paper,227.08,3,0.2,29.52
+ORD-2023-1138,2024-10-08,CUST-110,Corporate,North,Furniture,Chairs,2871.96,9,0.3,-358.99
+ORD-2023-1139,2024-09-23,CUST-139,Consumer,East,Technology,Printers,1115.23,2,0.3,16.73
+ORD-2023-1140,2024-11-01,CUST-245,Consumer,South,Office Supplies,Paper,704.4,8,0.0,197.23
+ORD-2023-1141,2023-02-28,CUST-192,Home Office,West,Technology,Phones,938.45,2,0.1,154.84
+ORD-2023-1142,2024-10-14,CUST-267,Corporate,East,Furniture,Furnishings,359.22,1,0.2,-17.96
+ORD-2023-1143,2023-06-26,CUST-254,Home Office,East,Technology,Printers,7628.11,9,0.0,1830.75
+ORD-2023-1144,2024-06-25,CUST-280,Consumer,West,Technology,Accessories,753.91,7,0.3,11.31
+ORD-2023-1145,2024-06-19,CUST-254,Corporate,East,Technology,Printers,2063.95,7,0.0,495.35
+ORD-2023-1146,2024-12-07,CUST-298,Consumer,South,Furniture,Bookcases,401.85,3,0.0,40.19
+ORD-2023-1147,2024-01-25,CUST-341,Home Office,East,Office Supplies,Art,544.36,6,0.2,70.77
+ORD-2023-1148,2024-11-13,CUST-309,Corporate,North,Technology,Printers,193.44,1,0.0,46.43
+ORD-2023-1149,2024-09-19,CUST-238,Corporate,South,Office Supplies,Fasteners,378.47,4,0.0,105.97
+ORD-2023-1150,2024-08-14,CUST-308,Corporate,West,Furniture,Furnishings,116.95,2,0.7,-49.7
+ORD-2023-1151,2023-03-15,CUST-302,Consumer,East,Office Supplies,Fasteners,192.29,2,0.0,53.84
+ORD-2023-1152,2023-07-16,CUST-284,Corporate,North,Office Supplies,Art,410.23,5,0.0,114.86
+ORD-2023-1153,2023-11-15,CUST-111,Consumer,West,Technology,Laptops,416.04,3,0.2,37.44
+ORD-2023-1154,2024-02-10,CUST-126,Consumer,West,Furniture,Bookcases,118.29,1,0.0,11.83
+ORD-2023-1155,2024-08-31,CUST-145,Consumer,West,Office Supplies,Storage,804.16,8,0.1,164.85
+ORD-2023-1156,2023-11-29,CUST-287,Corporate,North,Technology,Accessories,2275.24,4,0.0,546.06
+ORD-2023-1157,2023-02-16,CUST-163,Consumer,East,Furniture,Chairs,84.88,1,0.0,8.49
+ORD-2023-1158,2023-10-12,CUST-278,Home Office,East,Office Supplies,Storage,529.54,6,0.2,68.84
+ORD-2023-1159,2023-03-17,CUST-301,Consumer,East,Technology,Phones,2945.36,6,0.2,265.08
+ORD-2023-1160,2024-07-12,CUST-202,Consumer,East,Office Supplies,Binders,101.57,1,0.0,28.44
+ORD-2023-1161,2023-04-06,CUST-160,Home Office,East,Furniture,Tables,1265.47,7,0.5,-348.0
+ORD-2023-1162,2024-05-23,CUST-277,Corporate,East,Technology,Laptops,4295.31,9,0.3,64.43
+ORD-2023-1163,2024-03-26,CUST-226,Corporate,East,Office Supplies,Storage,248.75,4,0.2,32.34
+ORD-2023-1164,2024-04-08,CUST-342,Corporate,South,Furniture,Tables,2224.68,7,0.1,55.62
+ORD-2023-1165,2023-06-07,CUST-181,Home Office,East,Office Supplies,Art,378.74,5,0.1,77.64
+ORD-2023-1166,2023-01-16,CUST-288,Home Office,West,Office Supplies,Fasteners,63.61,3,0.1,13.04
+ORD-2023-1167,2023-02-21,CUST-247,Consumer,West,Technology,Phones,2781.51,5,0.2,250.34
+ORD-2023-1168,2024-03-28,CUST-216,Corporate,East,Office Supplies,Art,204.55,3,0.1,41.93
+ORD-2023-1169,2023-10-12,CUST-111,Consumer,West,Furniture,Bookcases,493.18,3,0.5,-135.62
+ORD-2023-1170,2023-10-04,CUST-141,Consumer,East,Furniture,Chairs,1801.66,8,0.1,45.04
+ORD-2023-1171,2023-06-21,CUST-347,Consumer,West,Office Supplies,Fasteners,574.72,6,0.1,117.82
+ORD-2023-1172,2024-02-22,CUST-292,Home Office,South,Office Supplies,Binders,210.18,2,0.0,58.85
+ORD-2023-1173,2024-07-10,CUST-192,Consumer,North,Technology,Phones,1444.55,3,0.0,346.69
+ORD-2023-1174,2023-08-31,CUST-127,Corporate,South,Office Supplies,Binders,41.52,1,0.0,11.63
+ORD-2023-1175,2023-01-27,CUST-306,Corporate,East,Office Supplies,Fasteners,717.09,8,0.1,147.0
+ORD-2023-1176,2024-02-06,CUST-218,Consumer,South,Furniture,Furnishings,2366.87,5,0.0,236.69
+ORD-2023-1177,2023-06-11,CUST-142,Corporate,South,Technology,Accessories,1779.95,4,0.5,-240.29
+ORD-2023-1178,2023-01-13,CUST-250,Consumer,West,Technology,Phones,732.58,2,0.1,120.88
+ORD-2023-1179,2023-01-22,CUST-107,Corporate,West,Technology,Printers,7019.47,8,0.0,1684.67
+ORD-2023-1180,2023-04-23,CUST-257,Corporate,North,Technology,Accessories,6187.81,7,0.0,1485.07
+ORD-2023-1181,2023-12-24,CUST-100,Corporate,West,Furniture,Furnishings,1656.46,8,0.5,-455.53
+ORD-2023-1182,2023-06-05,CUST-172,Corporate,East,Office Supplies,Fasteners,239.88,2,0.0,67.17
+ORD-2023-1183,2024-09-15,CUST-201,Corporate,West,Office Supplies,Fasteners,190.49,9,0.2,24.76
+ORD-2023-1184,2023-08-24,CUST-153,Corporate,West,Office Supplies,Paper,318.7,3,0.0,89.24
+ORD-2023-1185,2024-04-12,CUST-260,Consumer,South,Technology,Phones,1958.92,5,0.1,323.22
+ORD-2023-1186,2023-06-21,CUST-273,Corporate,North,Furniture,Furnishings,2596.68,8,0.1,64.92
+ORD-2023-1187,2023-12-27,CUST-232,Consumer,East,Furniture,Furnishings,2108.91,5,0.0,210.89
+ORD-2023-1188,2023-10-15,CUST-222,Consumer,East,Furniture,Furnishings,2360.14,7,0.2,-118.01
+ORD-2023-1189,2024-01-11,CUST-167,Corporate,North,Office Supplies,Storage,753.68,9,0.0,211.03
+ORD-2023-1190,2024-11-03,CUST-338,Corporate,North,Furniture,Tables,998.23,5,0.0,99.82
+ORD-2023-1191,2024-01-19,CUST-193,Corporate,East,Furniture,Tables,343.16,1,0.3,-42.89
+ORD-2023-1192,2023-05-11,CUST-283,Consumer,West,Office Supplies,Paper,786.46,8,0.0,220.21
+ORD-2023-1193,2024-11-24,CUST-319,Consumer,West,Furniture,Bookcases,2192.11,7,0.1,54.8
+ORD-2023-1194,2023-06-14,CUST-190,Consumer,North,Technology,Laptops,5237.7,8,0.1,864.22
+ORD-2023-1195,2024-07-15,CUST-324,Corporate,West,Technology,Accessories,1795.38,9,0.1,296.24
+ORD-2023-1196,2023-11-02,CUST-136,Home Office,East,Technology,Phones,3860.63,7,0.0,926.55
+ORD-2023-1197,2024-04-07,CUST-134,Consumer,East,Furniture,Furnishings,779.33,9,0.7,-331.22
+ORD-2023-1198,2024-03-05,CUST-145,Corporate,South,Office Supplies,Paper,16.66,1,0.0,4.66
+ORD-2023-1199,2023-03-16,CUST-230,Corporate,West,Office Supplies,Paper,67.18,4,0.3,3.69
+ORD-2023-1200,2023-10-16,CUST-271,Consumer,South,Furniture,Tables,343.51,1,0.2,-17.18
+ORD-2023-1201,2023-06-18,CUST-271,Corporate,East,Furniture,Tables,479.81,3,0.0,47.98
+ORD-2023-1202,2024-04-21,CUST-176,Consumer,South,Furniture,Tables,948.49,6,0.5,-260.83
+ORD-2023-1203,2024-04-02,CUST-102,Consumer,North,Office Supplies,Paper,13.98,1,0.7,-3.43
+ORD-2023-1204,2024-10-29,CUST-220,Consumer,West,Technology,Printers,3042.9,4,0.1,502.08
+ORD-2023-1205,2024-04-28,CUST-343,Corporate,North,Technology,Laptops,545.73,1,0.1,90.05
+ORD-2023-1206,2024-05-25,CUST-300,Consumer,North,Technology,Phones,970.79,9,0.5,-131.06
+ORD-2023-1207,2024-01-03,CUST-159,Corporate,East,Office Supplies,Paper,263.41,3,0.1,54.0
+ORD-2023-1208,2024-09-05,CUST-305,Corporate,South,Technology,Accessories,1770.47,3,0.1,292.13
+ORD-2023-1209,2024-08-03,CUST-309,Consumer,West,Office Supplies,Art,79.73,3,0.2,10.36
+ORD-2023-1210,2024-11-20,CUST-164,Consumer,West,Furniture,Tables,1143.53,6,0.1,28.59
+ORD-2023-1211,2024-03-12,CUST-235,Home Office,South,Office Supplies,Fasteners,182.22,6,0.0,51.02
+ORD-2023-1212,2023-12-11,CUST-233,Corporate,West,Furniture,Bookcases,1058.38,4,0.0,105.84
+ORD-2023-1213,2023-01-01,CUST-188,Consumer,East,Technology,Laptops,1719.99,3,0.0,412.8
+ORD-2023-1214,2023-02-11,CUST-172,Consumer,East,Office Supplies,Fasteners,280.8,7,0.0,78.62
+ORD-2023-1215,2024-07-17,CUST-200,Consumer,East,Technology,Accessories,2499.57,4,0.0,599.9
+ORD-2023-1216,2024-03-18,CUST-161,Home Office,East,Technology,Printers,347.25,2,0.3,5.21
+ORD-2023-1217,2024-04-15,CUST-282,Home Office,South,Furniture,Bookcases,606.43,5,0.5,-166.77
+ORD-2023-1218,2023-10-27,CUST-164,Corporate,West,Furniture,Tables,866.79,7,0.1,21.67
+ORD-2023-1219,2023-08-21,CUST-238,Home Office,West,Office Supplies,Fasteners,215.99,4,0.0,60.48
+ORD-2023-1220,2023-11-24,CUST-326,Consumer,East,Office Supplies,Fasteners,129.81,4,0.2,16.88
+ORD-2023-1221,2023-09-28,CUST-236,Home Office,South,Furniture,Tables,384.99,1,0.2,-19.25
+ORD-2023-1222,2024-11-09,CUST-133,Home Office,South,Office Supplies,Fasteners,456.88,8,0.1,93.66
+ORD-2023-1223,2023-10-06,CUST-271,Consumer,East,Furniture,Chairs,3605.06,8,0.0,360.51
+ORD-2023-1224,2024-01-04,CUST-251,Corporate,North,Office Supplies,Fasteners,22.57,1,0.0,6.32
+ORD-2023-1225,2023-01-26,CUST-127,Consumer,South,Furniture,Furnishings,1297.13,4,0.2,-64.86
+ORD-2023-1226,2023-09-13,CUST-180,Corporate,East,Furniture,Chairs,619.38,6,0.1,15.48
+ORD-2023-1227,2023-08-01,CUST-177,Corporate,West,Office Supplies,Binders,74.91,3,0.1,15.36
+ORD-2023-1228,2023-02-19,CUST-259,Consumer,South,Office Supplies,Paper,194.15,8,0.1,39.8
+ORD-2023-1229,2024-06-22,CUST-252,Consumer,North,Office Supplies,Art,112.45,1,0.0,31.49
+ORD-2023-1230,2023-09-28,CUST-273,Home Office,East,Furniture,Tables,524.12,4,0.0,52.41
+ORD-2023-1231,2023-01-10,CUST-248,Home Office,West,Office Supplies,Paper,37.92,1,0.1,7.77
+ORD-2023-1232,2024-06-27,CUST-185,Corporate,East,Furniture,Furnishings,2489.12,7,0.0,248.91
+ORD-2023-1233,2024-06-26,CUST-194,Consumer,North,Technology,Printers,2430.7,5,0.3,36.46
+ORD-2023-1234,2023-12-18,CUST-118,Corporate,East,Technology,Printers,531.27,1,0.0,127.5
+ORD-2023-1235,2023-04-20,CUST-228,Corporate,East,Technology,Printers,3969.34,8,0.0,952.64
+ORD-2023-1236,2024-06-18,CUST-227,Consumer,North,Office Supplies,Art,65.56,2,0.1,13.44
+ORD-2023-1237,2024-08-09,CUST-157,Corporate,South,Furniture,Tables,840.41,4,0.3,-105.05
+ORD-2023-1238,2023-01-26,CUST-310,Consumer,West,Office Supplies,Binders,279.2,3,0.1,57.24
+ORD-2023-1239,2024-12-18,CUST-312,Corporate,East,Furniture,Chairs,1974.47,6,0.0,197.45
+ORD-2023-1240,2023-01-02,CUST-170,Consumer,East,Technology,Laptops,3570.12,9,0.1,589.07
+ORD-2023-1241,2023-12-13,CUST-261,Consumer,North,Furniture,Furnishings,1135.72,4,0.1,28.39
+ORD-2023-1242,2024-03-07,CUST-129,Consumer,West,Furniture,Furnishings,313.77,3,0.0,31.38
+ORD-2023-1243,2024-12-08,CUST-324,Consumer,East,Technology,Printers,773.7,4,0.2,69.63
+ORD-2023-1244,2023-03-05,CUST-244,Corporate,West,Technology,Accessories,6883.66,9,0.1,1135.8
+ORD-2023-1245,2024-04-04,CUST-348,Consumer,North,Furniture,Bookcases,2017.17,7,0.1,50.43
+ORD-2023-1246,2024-02-12,CUST-208,Consumer,North,Office Supplies,Storage,235.83,6,0.1,48.35
+ORD-2023-1247,2024-07-17,CUST-291,Home Office,South,Technology,Accessories,2298.06,5,0.1,379.18
+ORD-2023-1248,2023-12-14,CUST-169,Home Office,North,Technology,Printers,1146.33,3,0.2,103.17
+ORD-2023-1249,2023-02-11,CUST-251,Corporate,North,Technology,Printers,4032.36,8,0.0,967.77
+ORD-2023-1250,2023-02-11,CUST-322,Consumer,South,Technology,Printers,7049.01,8,0.0,1691.76
+ORD-2023-1251,2023-11-20,CUST-120,Home Office,North,Office Supplies,Art,288.25,4,0.1,59.09
+ORD-2023-1252,2024-01-19,CUST-275,Consumer,North,Furniture,Bookcases,2482.36,8,0.0,248.24
+ORD-2023-1253,2024-11-05,CUST-230,Corporate,West,Technology,Printers,4429.86,5,0.0,1063.17
+ORD-2023-1254,2024-06-06,CUST-216,Home Office,East,Technology,Phones,2585.35,9,0.0,620.48
+ORD-2023-1255,2023-06-12,CUST-285,Corporate,East,Technology,Accessories,1322.03,8,0.3,19.83
+ORD-2023-1256,2024-01-26,CUST-104,Consumer,East,Office Supplies,Binders,561.2,6,0.1,115.05
+ORD-2023-1257,2024-11-11,CUST-187,Home Office,North,Office Supplies,Paper,225.05,3,0.1,46.14
+ORD-2023-1258,2024-07-20,CUST-119,Consumer,East,Technology,Accessories,301.02,1,0.0,72.24
+ORD-2023-1259,2024-01-28,CUST-113,Consumer,East,Office Supplies,Art,421.31,5,0.0,117.97
+ORD-2023-1260,2023-06-21,CUST-299,Corporate,West,Furniture,Tables,193.29,2,0.1,4.83
+ORD-2023-1261,2023-07-23,CUST-296,Corporate,North,Furniture,Bookcases,2222.1,9,0.0,222.21
+ORD-2023-1262,2024-11-25,CUST-154,Consumer,North,Technology,Laptops,4723.88,9,0.1,779.44
+ORD-2023-1263,2024-04-07,CUST-179,Consumer,East,Technology,Laptops,2273.46,4,0.0,545.63
+ORD-2023-1264,2024-09-09,CUST-259,Corporate,North,Office Supplies,Paper,18.51,1,0.0,5.18
+ORD-2023-1265,2024-04-16,CUST-145,Home Office,West,Technology,Printers,1704.81,3,0.3,25.57
+ORD-2023-1266,2023-08-19,CUST-322,Corporate,West,Office Supplies,Fasteners,45.4,2,0.3,2.5
+ORD-2023-1267,2024-04-17,CUST-232,Corporate,East,Technology,Phones,6904.97,9,0.0,1657.19
+ORD-2023-1268,2024-12-01,CUST-293,Corporate,West,Technology,Phones,647.72,3,0.7,-184.6
+ORD-2023-1269,2024-08-14,CUST-260,Home Office,South,Furniture,Chairs,637.18,5,0.0,63.72
+ORD-2023-1270,2023-06-22,CUST-116,Consumer,East,Technology,Phones,3860.7,9,0.1,637.02
+ORD-2023-1271,2024-08-28,CUST-255,Consumer,South,Furniture,Bookcases,346.47,2,0.2,-17.32
+ORD-2023-1272,2024-05-05,CUST-285,Home Office,North,Technology,Printers,1454.66,7,0.0,349.12
+ORD-2023-1273,2024-01-05,CUST-303,Corporate,North,Technology,Accessories,1599.68,5,0.5,-215.96
+ORD-2023-1274,2023-06-17,CUST-286,Consumer,East,Office Supplies,Art,106.79,1,0.0,29.9
+ORD-2023-1275,2023-03-21,CUST-183,Consumer,North,Furniture,Tables,532.06,3,0.3,-66.51
+ORD-2023-1276,2023-01-13,CUST-269,Consumer,West,Furniture,Tables,912.29,9,0.5,-250.88
+ORD-2023-1277,2024-05-18,CUST-343,Corporate,West,Office Supplies,Fasteners,446.87,7,0.1,91.61
+ORD-2023-1278,2023-03-23,CUST-188,Consumer,North,Office Supplies,Fasteners,132.05,9,0.1,27.07
+ORD-2023-1279,2024-08-16,CUST-101,Corporate,South,Technology,Phones,555.43,4,0.3,8.33
+ORD-2023-1280,2024-04-25,CUST-110,Corporate,West,Furniture,Chairs,179.84,1,0.1,4.5
+ORD-2023-1281,2024-12-17,CUST-300,Home Office,North,Office Supplies,Fasteners,159.07,3,0.2,20.68
+ORD-2023-1282,2024-10-16,CUST-175,Home Office,North,Office Supplies,Binders,499.19,8,0.1,102.33
+ORD-2023-1283,2024-10-17,CUST-119,Home Office,East,Furniture,Bookcases,1808.88,6,0.1,45.22
+ORD-2023-1284,2024-07-21,CUST-335,Consumer,East,Furniture,Bookcases,738.78,6,0.7,-313.98
+ORD-2023-1285,2024-11-15,CUST-244,Consumer,West,Furniture,Bookcases,658.75,6,0.0,65.88
+ORD-2023-1286,2023-01-29,CUST-198,Consumer,North,Furniture,Bookcases,242.28,1,0.1,6.06
+ORD-2023-1287,2023-05-22,CUST-235,Corporate,East,Furniture,Chairs,2632.42,6,0.0,263.24
+ORD-2023-1288,2023-01-27,CUST-136,Consumer,East,Technology,Laptops,5092.89,6,0.0,1222.29
+ORD-2023-1289,2023-07-24,CUST-337,Corporate,South,Office Supplies,Fasteners,130.43,9,0.2,16.96
+ORD-2023-1290,2024-12-15,CUST-344,Consumer,North,Technology,Laptops,687.4,3,0.5,-92.8
+ORD-2023-1291,2023-07-05,CUST-186,Home Office,West,Office Supplies,Binders,68.24,5,0.1,13.99
+ORD-2023-1292,2024-05-31,CUST-263,Corporate,East,Office Supplies,Binders,118.8,2,0.3,6.53
+ORD-2023-1293,2023-09-23,CUST-290,Home Office,East,Technology,Printers,624.12,3,0.5,-84.26
+ORD-2023-1294,2024-04-10,CUST-138,Consumer,East,Furniture,Bookcases,276.65,2,0.0,27.66
+ORD-2023-1295,2024-09-21,CUST-180,Corporate,East,Office Supplies,Storage,213.2,3,0.0,59.7
+ORD-2023-1296,2024-05-15,CUST-322,Corporate,East,Furniture,Bookcases,592.48,5,0.1,14.81
+ORD-2023-1297,2023-12-02,CUST-280,Home Office,South,Office Supplies,Art,342.65,4,0.0,95.94
+ORD-2023-1298,2024-09-12,CUST-147,Home Office,West,Furniture,Furnishings,2349.12,9,0.0,234.91
+ORD-2023-1299,2023-01-09,CUST-106,Corporate,East,Furniture,Tables,2064.34,7,0.0,206.43
+ORD-2023-1300,2023-04-13,CUST-322,Consumer,West,Office Supplies,Binders,163.75,2,0.0,45.85
+ORD-2023-1301,2024-07-24,CUST-329,Corporate,East,Furniture,Chairs,780.34,2,0.1,19.51
+ORD-2023-1302,2023-11-23,CUST-103,Consumer,West,Office Supplies,Fasteners,272.29,8,0.5,-25.87
+ORD-2023-1303,2023-03-13,CUST-344,Consumer,South,Technology,Accessories,769.81,2,0.0,184.75
+ORD-2023-1304,2023-07-28,CUST-300,Consumer,South,Office Supplies,Fasteners,292.36,3,0.1,59.93
+ORD-2023-1305,2024-12-09,CUST-148,Consumer,North,Technology,Accessories,3336.33,6,0.0,800.72
+ORD-2023-1306,2024-01-19,CUST-340,Consumer,West,Technology,Phones,689.0,2,0.0,165.36
+ORD-2023-1307,2024-01-01,CUST-224,Corporate,West,Office Supplies,Fasteners,87.35,3,0.1,17.91
+ORD-2023-1308,2023-11-16,CUST-348,Corporate,North,Furniture,Bookcases,1214.28,3,0.1,30.36
+ORD-2023-1309,2024-07-24,CUST-163,Consumer,South,Furniture,Bookcases,189.29,1,0.5,-52.05
+ORD-2023-1310,2024-03-02,CUST-104,Home Office,East,Furniture,Tables,1769.68,5,0.1,44.24
+ORD-2023-1311,2024-07-25,CUST-335,Home Office,North,Technology,Laptops,447.31,3,0.7,-127.48
+ORD-2023-1312,2024-06-27,CUST-254,Consumer,South,Furniture,Bookcases,284.71,1,0.1,-398.59
+ORD-2023-1313,2024-01-04,CUST-338,Home Office,East,Furniture,Tables,479.25,2,0.1,11.98
+ORD-2023-1314,2024-02-17,CUST-246,Consumer,North,Office Supplies,Binders,72.75,1,0.3,4.0
+ORD-2023-1315,2023-08-13,CUST-192,Corporate,East,Technology,Phones,1035.32,7,0.1,170.83
+ORD-2023-1316,2023-01-22,CUST-129,Consumer,North,Office Supplies,Paper,80.01,2,0.2,10.4
+ORD-2023-1317,2024-11-20,CUST-164,Home Office,North,Technology,Accessories,2967.72,8,0.0,712.25
+ORD-2023-1318,2023-09-04,CUST-100,Corporate,North,Furniture,Bookcases,1488.23,5,0.3,-186.03
+ORD-2023-1319,2024-09-01,CUST-198,Corporate,South,Furniture,Furnishings,1003.94,4,0.0,100.39
+ORD-2023-1320,2024-01-31,CUST-267,Consumer,West,Furniture,Chairs,898.45,3,0.0,89.85
+ORD-2023-1321,2023-03-23,CUST-258,Consumer,East,Office Supplies,Art,143.3,2,0.2,18.63
+ORD-2023-1322,2023-06-17,CUST-152,Consumer,South,Technology,Printers,5807.08,7,0.0,1393.7
+ORD-2023-1323,2024-08-29,CUST-130,Corporate,West,Furniture,Tables,1019.08,5,0.2,-50.95
+ORD-2023-1324,2024-10-01,CUST-113,Home Office,East,Furniture,Tables,528.7,6,0.2,-26.44
+ORD-2023-1325,2023-11-30,CUST-309,Corporate,West,Technology,Phones,822.9,4,0.2,74.06
+ORD-2023-1326,2023-10-17,CUST-322,Corporate,North,Technology,Laptops,6403.36,9,0.0,1536.81
+ORD-2023-1327,2023-05-17,CUST-233,Corporate,South,Office Supplies,Paper,480.33,7,0.1,98.47
+ORD-2023-1328,2023-06-27,CUST-295,Home Office,West,Office Supplies,Fasteners,156.08,3,0.3,8.58
+ORD-2023-1329,2024-07-22,CUST-285,Consumer,South,Office Supplies,Fasteners,929.83,8,0.0,260.35
+ORD-2023-1330,2023-01-31,CUST-200,Corporate,East,Furniture,Furnishings,915.21,7,0.3,-114.4
+ORD-2023-1331,2024-11-26,CUST-239,Home Office,East,Office Supplies,Binders,187.66,9,0.2,24.4
+ORD-2023-1332,2024-12-20,CUST-305,Corporate,West,Technology,Laptops,4562.78,9,0.0,1095.07
+ORD-2023-1333,2024-07-08,CUST-172,Consumer,West,Technology,Accessories,3151.04,4,0.0,756.25
+ORD-2023-1334,2024-09-18,CUST-135,Corporate,West,Office Supplies,Binders,56.45,2,0.5,-5.36
+ORD-2023-1335,2024-06-15,CUST-334,Corporate,North,Technology,Printers,1257.53,6,0.3,18.86
+ORD-2023-1336,2023-09-22,CUST-201,Corporate,West,Technology,Laptops,3330.17,5,0.0,799.24
+ORD-2023-1337,2023-08-31,CUST-281,Consumer,West,Technology,Printers,1223.69,3,0.1,201.91
+ORD-2023-1338,2023-07-12,CUST-115,Corporate,West,Office Supplies,Binders,513.23,6,0.1,105.21
+ORD-2023-1339,2024-07-10,CUST-323,Corporate,West,Furniture,Tables,1174.38,9,0.0,117.44
+ORD-2023-1340,2023-08-28,CUST-210,Consumer,East,Technology,Accessories,952.27,5,0.7,-271.4
+ORD-2023-1341,2024-05-01,CUST-203,Corporate,West,Furniture,Furnishings,1335.84,8,0.0,133.58
+ORD-2023-1342,2023-02-17,CUST-203,Consumer,East,Technology,Laptops,4118.51,7,0.1,679.55
+ORD-2023-1343,2024-11-09,CUST-335,Home Office,East,Office Supplies,Art,320.38,6,0.0,89.71
+ORD-2023-1344,2024-03-22,CUST-194,Corporate,West,Office Supplies,Binders,175.91,5,0.5,-16.71
+ORD-2023-1345,2024-04-30,CUST-332,Consumer,West,Technology,Phones,2110.46,6,0.3,31.66
+ORD-2023-1346,2024-05-11,CUST-254,Corporate,North,Office Supplies,Paper,116.4,8,0.5,-11.06
+ORD-2023-1347,2024-07-01,CUST-177,Consumer,East,Furniture,Tables,2256.18,6,0.2,-112.81
+ORD-2023-1348,2024-01-29,CUST-260,Home Office,East,Furniture,Tables,1342.86,8,0.0,134.29
+ORD-2023-1349,2023-04-09,CUST-147,Consumer,West,Office Supplies,Paper,142.74,6,0.1,29.26
+ORD-2023-1350,2023-10-20,CUST-217,Consumer,North,Office Supplies,Binders,154.65,2,0.0,43.3
+ORD-2023-1351,2023-01-10,CUST-179,Home Office,West,Technology,Printers,1347.47,2,0.0,323.39
+ORD-2023-1352,2024-12-04,CUST-138,Corporate,West,Office Supplies,Fasteners,147.49,4,0.1,30.24
+ORD-2023-1353,2024-07-16,CUST-319,Consumer,West,Office Supplies,Paper,739.57,9,0.2,96.14
+ORD-2023-1354,2024-10-28,CUST-190,Home Office,North,Technology,Accessories,5030.6,8,0.2,452.75
+ORD-2023-1355,2023-07-02,CUST-254,Corporate,East,Technology,Phones,1466.65,4,0.0,352.0
+ORD-2023-1356,2024-11-18,CUST-198,Consumer,West,Furniture,Chairs,472.41,4,0.0,47.24
+ORD-2023-1357,2024-11-15,CUST-292,Home Office,East,Furniture,Tables,1155.65,4,0.1,28.89
+ORD-2023-1358,2023-06-23,CUST-244,Consumer,West,Technology,Phones,1612.78,9,0.0,387.07
+ORD-2023-1359,2023-04-17,CUST-125,Corporate,West,Office Supplies,Binders,546.55,8,0.1,112.04
+ORD-2023-1360,2024-08-27,CUST-122,Home Office,West,Technology,Accessories,2884.52,8,0.2,259.61
+ORD-2023-1361,2023-12-09,CUST-337,Consumer,North,Furniture,Furnishings,988.19,3,0.0,98.82
+ORD-2023-1362,2023-02-21,CUST-263,Consumer,West,Technology,Accessories,6160.48,8,0.0,1478.52
+ORD-2023-1363,2024-05-14,CUST-122,Corporate,West,Office Supplies,Paper,71.6,1,0.0,20.05
+ORD-2023-1364,2024-11-01,CUST-156,Consumer,West,Furniture,Chairs,951.83,9,0.0,95.18
+ORD-2023-1365,2024-12-01,CUST-175,Consumer,North,Technology,Laptops,566.78,3,0.0,136.03
+ORD-2023-1366,2023-06-11,CUST-211,Consumer,West,Office Supplies,Binders,152.72,2,0.3,8.4
+ORD-2023-1367,2024-08-11,CUST-312,Home Office,South,Technology,Laptops,2843.66,4,0.2,255.93
+ORD-2023-1368,2024-01-26,CUST-238,Corporate,North,Technology,Printers,1323.85,2,0.1,218.44
+ORD-2023-1369,2024-03-28,CUST-340,Consumer,East,Furniture,Chairs,1090.06,9,0.1,27.25
+ORD-2023-1370,2024-01-05,CUST-222,Consumer,West,Furniture,Furnishings,596.52,2,0.2,-29.83
+ORD-2023-1371,2024-08-01,CUST-172,Home Office,East,Technology,Laptops,173.14,1,0.0,41.55
+ORD-2023-1372,2023-09-06,CUST-282,Consumer,North,Technology,Printers,625.76,1,0.1,103.25
+ORD-2023-1373,2024-01-31,CUST-215,Corporate,North,Technology,Laptops,1753.07,4,0.0,420.74
+ORD-2023-1374,2023-03-31,CUST-233,Consumer,West,Office Supplies,Binders,265.29,4,0.1,54.38
+ORD-2023-1375,2024-01-29,CUST-289,Consumer,South,Office Supplies,Storage,82.33,6,0.5,-7.82
+ORD-2023-1376,2024-02-02,CUST-121,Home Office,West,Furniture,Bookcases,1370.05,4,0.0,137.0
+ORD-2023-1377,2024-04-29,CUST-223,Home Office,West,Office Supplies,Storage,39.06,3,0.2,5.08
+ORD-2023-1378,2023-05-15,CUST-255,Consumer,South,Technology,Phones,766.12,1,0.1,126.41
+ORD-2023-1379,2023-10-19,CUST-293,Consumer,South,Technology,Accessories,5976.75,9,0.0,1434.42
+ORD-2023-1380,2023-05-28,CUST-153,Corporate,East,Furniture,Chairs,1030.53,7,0.1,25.76
+ORD-2023-1381,2024-03-08,CUST-116,Home Office,West,Office Supplies,Paper,159.03,8,0.1,32.6
+ORD-2023-1382,2023-03-16,CUST-303,Corporate,South,Furniture,Furnishings,1030.18,4,0.0,103.02
+ORD-2023-1383,2023-02-23,CUST-270,Consumer,East,Furniture,Tables,1423.35,8,0.5,-391.42
+ORD-2023-1384,2024-03-04,CUST-326,Consumer,West,Technology,Accessories,3627.98,6,0.1,598.62
+ORD-2023-1385,2024-04-11,CUST-332,Consumer,East,Technology,Laptops,5507.78,9,0.1,908.78
+ORD-2023-1386,2024-01-14,CUST-249,Home Office,West,Technology,Laptops,1197.55,9,0.5,-161.67
+ORD-2023-1387,2024-11-07,CUST-144,Corporate,East,Technology,Printers,1521.72,9,0.1,251.08
+ORD-2023-1388,2024-02-24,CUST-131,Consumer,West,Technology,Printers,7018.66,9,0.0,1684.48
+ORD-2023-1389,2023-06-04,CUST-252,Consumer,North,Office Supplies,Paper,325.37,3,0.0,91.1
+ORD-2023-1390,2023-11-09,CUST-220,Consumer,East,Technology,Phones,1598.64,3,0.1,263.78
+ORD-2023-1391,2024-04-27,CUST-162,Consumer,North,Office Supplies,Fasteners,70.88,7,0.5,-6.73
+ORD-2023-1392,2023-09-14,CUST-174,Consumer,North,Technology,Accessories,1259.19,2,0.1,207.77
+ORD-2023-1393,2024-03-04,CUST-347,Home Office,West,Furniture,Bookcases,861.81,3,0.0,86.18
+ORD-2023-1394,2023-05-25,CUST-172,Home Office,South,Furniture,Chairs,870.02,8,0.0,87.0
+ORD-2023-1395,2023-05-29,CUST-184,Home Office,West,Office Supplies,Binders,339.91,5,0.2,44.19
+ORD-2023-1396,2023-10-24,CUST-178,Consumer,East,Office Supplies,Storage,284.71,4,0.0,79.72
+ORD-2023-1397,2023-02-16,CUST-153,Consumer,East,Office Supplies,Storage,406.66,6,0.0,113.86
+ORD-2023-1398,2023-01-21,CUST-184,Consumer,West,Technology,Phones,456.58,2,0.5,-61.64
+ORD-2023-1399,2023-04-26,CUST-134,Corporate,West,Technology,Laptops,1825.43,3,0.2,164.29
+ORD-2023-1400,2024-08-03,CUST-221,Corporate,North,Technology,Printers,1910.51,7,0.2,171.95
+ORD-2023-1401,2024-08-19,CUST-160,Consumer,South,Office Supplies,Fasteners,275.36,7,0.0,77.1
+ORD-2023-1402,2023-10-10,CUST-314,Corporate,South,Furniture,Bookcases,1275.1,5,0.3,-159.39
+ORD-2023-1403,2023-11-29,CUST-215,Consumer,East,Furniture,Bookcases,1010.64,5,0.2,-50.53
+ORD-2023-1404,2023-06-15,CUST-249,Home Office,East,Technology,Phones,3146.85,5,0.1,519.23
+ORD-2023-1405,2024-01-25,CUST-127,Home Office,North,Technology,Laptops,855.28,3,0.1,141.12
+ORD-2023-1406,2023-08-12,CUST-274,Consumer,South,Technology,Accessories,4408.02,8,0.1,727.32
+ORD-2023-1407,2024-06-26,CUST-240,Corporate,East,Office Supplies,Storage,36.39,1,0.0,10.19
+ORD-2023-1408,2024-09-18,CUST-227,Corporate,West,Furniture,Furnishings,646.13,5,0.0,64.61
+ORD-2023-1409,2024-12-06,CUST-292,Home Office,South,Furniture,Chairs,1416.29,7,0.5,-389.48
+ORD-2023-1410,2023-01-14,CUST-243,Consumer,East,Office Supplies,Binders,153.2,5,0.2,19.92
+ORD-2023-1411,2023-01-08,CUST-332,Home Office,East,Office Supplies,Binders,593.41,9,0.0,166.15
+ORD-2023-1412,2024-01-18,CUST-156,Home Office,West,Furniture,Bookcases,231.16,3,0.1,5.78
+ORD-2023-1413,2024-08-01,CUST-215,Home Office,North,Office Supplies,Paper,586.05,9,0.3,32.23
+ORD-2023-1414,2024-04-11,CUST-320,Home Office,East,Technology,Laptops,3232.39,4,0.1,533.34
+ORD-2023-1415,2023-11-18,CUST-221,Consumer,South,Technology,Laptops,1594.17,4,0.2,143.48
+ORD-2023-1416,2023-09-09,CUST-160,Home Office,West,Office Supplies,Storage,98.01,9,0.3,5.39
+ORD-2023-1417,2023-03-16,CUST-323,Corporate,West,Technology,Printers,2704.02,5,0.0,648.96
+ORD-2023-1418,2024-01-08,CUST-233,Corporate,North,Technology,Phones,4528.04,7,0.0,1086.73
+ORD-2023-1419,2024-06-23,CUST-175,Corporate,South,Office Supplies,Storage,287.49,5,0.2,37.37
+ORD-2023-1420,2023-12-08,CUST-143,Corporate,North,Office Supplies,Storage,59.61,2,0.5,-5.66
+ORD-2023-1421,2024-06-20,CUST-227,Consumer,East,Furniture,Tables,1999.17,7,0.2,-99.96
+ORD-2023-1422,2024-01-31,CUST-248,Corporate,West,Furniture,Bookcases,211.44,1,0.3,-26.43
+ORD-2023-1423,2024-05-15,CUST-122,Consumer,West,Technology,Printers,3044.82,5,0.2,274.03
+ORD-2023-1424,2024-12-08,CUST-169,Consumer,East,Office Supplies,Paper,146.17,8,0.0,40.93
+ORD-2023-1425,2023-10-26,CUST-347,Home Office,East,Office Supplies,Fasteners,360.26,6,0.0,100.87
+ORD-2023-1426,2023-08-23,CUST-275,Home Office,West,Office Supplies,Fasteners,75.55,1,0.0,21.15
+ORD-2023-1427,2024-08-18,CUST-242,Home Office,East,Office Supplies,Fasteners,359.25,3,0.0,100.59
+ORD-2023-1428,2023-08-07,CUST-147,Consumer,North,Technology,Accessories,1363.53,3,0.0,327.25
+ORD-2023-1429,2023-08-13,CUST-334,Corporate,West,Technology,Accessories,501.77,4,0.3,7.53
+ORD-2023-1430,2023-01-04,CUST-118,Corporate,West,Office Supplies,Fasteners,180.46,9,0.1,36.99
+ORD-2023-1431,2023-11-15,CUST-282,Corporate,East,Office Supplies,Storage,393.61,7,0.5,-37.39
+ORD-2023-1432,2024-03-21,CUST-265,Home Office,West,Furniture,Chairs,1589.9,4,0.1,39.75
+ORD-2023-1433,2024-03-03,CUST-120,Consumer,West,Technology,Accessories,1289.53,6,0.5,-174.09
+ORD-2023-1434,2024-03-30,CUST-103,Corporate,East,Technology,Accessories,1442.64,6,0.1,238.04
+ORD-2023-1435,2023-10-25,CUST-218,Corporate,East,Technology,Laptops,262.97,2,0.2,23.67
+ORD-2023-1436,2023-05-04,CUST-112,Home Office,West,Furniture,Furnishings,522.59,3,0.5,-143.71
+ORD-2023-1437,2023-04-21,CUST-247,Consumer,East,Furniture,Tables,863.0,8,0.1,21.57
+ORD-2023-1438,2023-01-23,CUST-106,Corporate,West,Furniture,Tables,2524.62,7,0.2,-126.23
+ORD-2023-1439,2023-12-28,CUST-333,Consumer,East,Office Supplies,Storage,1077.39,9,0.0,301.67
+ORD-2023-1440,2024-05-12,CUST-111,Home Office,East,Furniture,Chairs,813.43,4,0.1,20.34
+ORD-2023-1441,2024-08-11,CUST-119,Consumer,North,Office Supplies,Fasteners,117.41,2,0.0,32.87
+ORD-2023-1442,2023-02-09,CUST-139,Corporate,South,Office Supplies,Art,236.81,5,0.5,-22.5
+ORD-2023-1443,2023-01-07,CUST-148,Consumer,South,Technology,Accessories,1978.07,8,0.0,474.74
+ORD-2023-1444,2023-09-12,CUST-226,Home Office,North,Technology,Printers,569.78,2,0.3,8.55
+ORD-2023-1445,2023-07-15,CUST-227,Corporate,South,Technology,Accessories,2035.49,5,0.2,183.19
+ORD-2023-1446,2023-04-14,CUST-156,Home Office,North,Furniture,Furnishings,273.03,1,0.0,27.3
+ORD-2023-1447,2024-05-29,CUST-242,Corporate,East,Technology,Laptops,1040.65,2,0.2,93.66
+ORD-2023-1448,2023-05-24,CUST-312,Home Office,West,Technology,Accessories,7697.83,9,0.0,1847.48
+ORD-2023-1449,2023-12-19,CUST-243,Home Office,East,Office Supplies,Art,152.8,7,0.2,19.86
+ORD-2023-1450,2023-08-25,CUST-176,Home Office,East,Furniture,Chairs,381.15,1,0.1,9.53
+ORD-2023-1451,2024-02-22,CUST-329,Home Office,South,Furniture,Bookcases,1512.4,8,0.2,-75.62
+ORD-2023-1452,2023-04-05,CUST-265,Consumer,South,Office Supplies,Fasteners,610.2,6,0.0,170.86
+ORD-2023-1453,2024-11-29,CUST-158,Consumer,West,Furniture,Chairs,1366.42,3,0.0,136.64
+ORD-2023-1454,2024-08-31,CUST-249,Consumer,East,Office Supplies,Art,533.89,5,0.0,149.49
+ORD-2023-1455,2024-06-25,CUST-242,Corporate,West,Furniture,Tables,129.47,1,0.1,3.24
+ORD-2023-1456,2023-05-24,CUST-286,Consumer,West,Technology,Printers,2445.25,8,0.0,586.86
+ORD-2023-1457,2024-02-29,CUST-129,Consumer,West,Technology,Printers,1296.57,2,0.1,213.93
+ORD-2023-1458,2024-12-20,CUST-180,Consumer,East,Office Supplies,Fasteners,475.52,5,0.0,133.15
+ORD-2023-1459,2024-01-03,CUST-260,Corporate,East,Furniture,Chairs,505.51,5,0.0,50.55
+ORD-2023-1460,2024-09-06,CUST-336,Corporate,West,Office Supplies,Binders,407.27,9,0.1,83.49
+ORD-2023-1461,2023-03-22,CUST-202,Corporate,West,Furniture,Furnishings,1311.47,8,0.0,131.15
+ORD-2023-1462,2023-04-01,CUST-201,Corporate,East,Office Supplies,Paper,786.61,7,0.0,220.25
+ORD-2023-1463,2023-01-14,CUST-162,Consumer,South,Office Supplies,Binders,72.64,8,0.5,-6.9
+ORD-2023-1464,2023-01-30,CUST-136,Corporate,East,Furniture,Bookcases,1102.54,6,0.1,27.56
+ORD-2023-1465,2024-09-29,CUST-327,Consumer,West,Office Supplies,Paper,310.33,4,0.1,63.62
+ORD-2023-1466,2024-03-24,CUST-309,Consumer,South,Office Supplies,Paper,491.95,8,0.0,137.75
+ORD-2023-1467,2024-12-15,CUST-210,Consumer,North,Furniture,Furnishings,653.47,4,0.0,65.35
+ORD-2023-1468,2023-04-28,CUST-217,Consumer,South,Furniture,Furnishings,319.09,2,0.0,31.91
+ORD-2023-1469,2024-04-21,CUST-114,Consumer,North,Office Supplies,Paper,283.47,3,0.0,79.37
+ORD-2023-1470,2023-11-29,CUST-186,Consumer,South,Office Supplies,Art,109.03,2,0.5,-10.36
+ORD-2023-1471,2023-08-04,CUST-313,Consumer,North,Technology,Laptops,1653.64,5,0.3,24.8
+ORD-2023-1472,2023-05-05,CUST-315,Consumer,South,Furniture,Furnishings,1397.63,4,0.1,34.94
+ORD-2023-1473,2023-03-25,CUST-319,Consumer,North,Furniture,Chairs,1248.23,7,0.5,-343.26
+ORD-2023-1474,2024-09-20,CUST-302,Consumer,West,Furniture,Furnishings,4283.25,9,0.0,428.33
+ORD-2023-1475,2024-07-30,CUST-339,Consumer,North,Technology,Phones,1866.13,6,0.0,447.87
+ORD-2023-1476,2024-07-18,CUST-290,Corporate,East,Office Supplies,Storage,208.62,7,0.1,42.77
+ORD-2023-1477,2024-02-09,CUST-130,Consumer,West,Technology,Printers,1650.27,5,0.0,396.06
+ORD-2023-1478,2023-02-07,CUST-121,Consumer,East,Office Supplies,Fasteners,524.46,6,0.2,68.18
+ORD-2023-1479,2023-12-10,CUST-180,Consumer,North,Furniture,Furnishings,1006.83,6,0.0,100.68
+ORD-2023-1480,2023-09-16,CUST-258,Consumer,North,Office Supplies,Storage,455.99,6,0.2,59.28
+ORD-2023-1481,2023-08-07,CUST-317,Corporate,West,Office Supplies,Fasteners,351.79,9,0.5,-33.42
+ORD-2023-1482,2023-10-21,CUST-227,Consumer,East,Technology,Printers,6174.58,9,0.0,1481.9
+ORD-2023-1483,2023-06-22,CUST-262,Corporate,West,Furniture,Bookcases,352.26,1,0.0,35.23
+ORD-2023-1484,2023-10-18,CUST-240,Home Office,South,Office Supplies,Fasteners,52.23,2,0.0,14.62
+ORD-2023-1485,2024-01-18,CUST-243,Consumer,North,Furniture,Chairs,1254.63,4,0.0,125.46
+ORD-2023-1486,2023-01-31,CUST-270,Corporate,East,Furniture,Furnishings,478.39,3,0.1,11.96
+ORD-2023-1487,2023-07-08,CUST-307,Home Office,West,Technology,Laptops,1304.14,3,0.0,312.99
+ORD-2023-1488,2023-10-18,CUST-272,Corporate,North,Office Supplies,Paper,449.85,7,0.3,24.74
+ORD-2023-1489,2024-04-18,CUST-205,Consumer,West,Technology,Printers,2613.95,4,0.1,431.3
+ORD-2023-1490,2024-08-30,CUST-166,Home Office,South,Furniture,Furnishings,1299.53,6,0.0,129.95
+ORD-2023-1491,2024-08-19,CUST-297,Consumer,South,Office Supplies,Art,123.14,3,0.2,16.01
+ORD-2023-1492,2023-11-14,CUST-113,Consumer,West,Technology,Laptops,2694.65,3,0.0,646.72
+ORD-2023-1493,2024-05-10,CUST-129,Consumer,North,Technology,Phones,1711.86,5,0.1,282.46
+ORD-2023-1494,2024-07-12,CUST-226,Corporate,South,Technology,Printers,6010.24,9,0.0,1442.46
+ORD-2023-1495,2023-01-12,CUST-346,Consumer,South,Office Supplies,Art,154.0,5,0.7,-37.73
+ORD-2023-1496,2023-07-10,CUST-342,Consumer,West,Technology,Laptops,1675.48,6,0.1,276.45
+ORD-2023-1497,2023-10-10,CUST-158,Corporate,West,Technology,Laptops,3169.26,4,0.1,522.93
+ORD-2023-1498,2024-01-21,CUST-142,Consumer,West,Furniture,Furnishings,857.83,8,0.1,21.45
+ORD-2023-1499,2024-08-03,CUST-175,Consumer,South,Technology,Printers,1950.18,4,0.0,468.04
+ORD-2023-1500,2023-07-26,CUST-274,Consumer,West,Technology,Laptops,3130.41,5,0.1,516.52
+ORD-2023-1501,2024-01-17,CUST-169,Consumer,North,Technology,Laptops,1857.97,7,0.0,445.91
+ORD-2023-1502,2023-09-07,CUST-133,Consumer,East,Furniture,Furnishings,1302.53,4,0.0,130.25
+ORD-2023-1503,2023-05-20,CUST-137,Consumer,South,Furniture,Chairs,525.15,4,0.0,52.52
+ORD-2023-1504,2023-06-23,CUST-225,Corporate,North,Office Supplies,Binders,113.37,2,0.0,31.74
+ORD-2023-1505,2024-01-21,CUST-246,Consumer,South,Technology,Printers,721.31,9,0.7,-205.57
+ORD-2023-1506,2023-05-02,CUST-286,Home Office,East,Furniture,Bookcases,1185.06,3,0.2,-59.25
+ORD-2023-1507,2023-10-24,CUST-228,Corporate,East,Furniture,Furnishings,2645.79,7,0.2,-132.29
+ORD-2023-1508,2023-04-04,CUST-164,Home Office,North,Technology,Accessories,245.23,1,0.7,-69.89
+ORD-2023-1509,2024-04-14,CUST-270,Corporate,East,Office Supplies,Paper,25.4,3,0.7,-6.22
+ORD-2023-1510,2024-11-24,CUST-281,Corporate,East,Technology,Accessories,1448.74,2,0.0,347.7
+ORD-2023-1511,2023-11-05,CUST-217,Consumer,North,Technology,Phones,2514.33,8,0.2,226.29
+ORD-2023-1512,2023-06-07,CUST-261,Consumer,North,Technology,Printers,294.0,2,0.2,26.46
+ORD-2023-1513,2023-05-13,CUST-275,Consumer,South,Furniture,Furnishings,2151.75,9,0.3,-268.97
+ORD-2023-1514,2023-01-21,CUST-177,Corporate,East,Furniture,Chairs,980.6,6,0.2,-49.03
+ORD-2023-1515,2023-10-14,CUST-200,Corporate,East,Office Supplies,Fasteners,382.24,8,0.1,78.36
+ORD-2023-1516,2024-03-08,CUST-305,Consumer,West,Technology,Printers,4116.23,6,0.0,987.9
+ORD-2023-1517,2024-07-19,CUST-323,Home Office,South,Office Supplies,Binders,457.29,4,0.0,128.04
+ORD-2023-1518,2024-06-28,CUST-243,Corporate,East,Technology,Phones,908.22,7,0.2,81.74
+ORD-2023-1519,2024-10-11,CUST-197,Consumer,South,Office Supplies,Fasteners,51.15,1,0.5,-4.86
+ORD-2023-1520,2023-08-18,CUST-182,Home Office,South,Office Supplies,Storage,448.87,5,0.0,125.68
+ORD-2023-1521,2023-04-17,CUST-252,Home Office,West,Technology,Printers,2225.05,3,0.1,367.13
+ORD-2023-1522,2023-10-04,CUST-195,Consumer,South,Office Supplies,Fasteners,457.83,7,0.0,128.19
+ORD-2023-1523,2023-05-08,CUST-226,Home Office,East,Office Supplies,Storage,293.19,3,0.1,60.1
+ORD-2023-1524,2023-08-24,CUST-230,Home Office,East,Technology,Phones,3091.44,8,0.0,741.95
+ORD-2023-1525,2024-06-15,CUST-118,Corporate,East,Office Supplies,Art,805.38,9,0.1,165.1
+ORD-2023-1526,2024-06-09,CUST-142,Corporate,East,Furniture,Chairs,917.32,4,0.2,-45.87
+ORD-2023-1527,2023-05-22,CUST-119,Consumer,East,Technology,Laptops,3711.79,7,0.1,612.45
+ORD-2023-1528,2024-04-14,CUST-233,Corporate,East,Office Supplies,Storage,419.62,6,0.0,117.49
+ORD-2023-1529,2023-07-01,CUST-219,Home Office,North,Technology,Laptops,3759.03,8,0.2,338.31
+ORD-2023-1530,2023-02-23,CUST-187,Corporate,North,Office Supplies,Art,332.07,3,0.0,92.98
+ORD-2023-1531,2024-10-27,CUST-106,Consumer,East,Office Supplies,Fasteners,242.86,6,0.5,-23.07
+ORD-2023-1532,2023-11-24,CUST-125,Corporate,East,Furniture,Tables,325.51,2,0.5,-89.52
+ORD-2023-1533,2024-08-10,CUST-343,Consumer,East,Furniture,Chairs,124.66,1,0.0,12.47
+ORD-2023-1534,2023-10-16,CUST-265,Consumer,West,Technology,Printers,2166.86,5,0.1,357.53
+ORD-2023-1535,2023-11-24,CUST-339,Home Office,East,Furniture,Bookcases,1402.36,9,0.0,140.24
+ORD-2023-1536,2024-02-23,CUST-345,Consumer,South,Furniture,Furnishings,172.79,2,0.1,4.32
+ORD-2023-1537,2023-02-12,CUST-277,Consumer,South,Furniture,Tables,1260.57,8,0.3,-157.57
+ORD-2023-1538,2024-01-17,CUST-103,Consumer,South,Office Supplies,Binders,83.43,3,0.1,17.1
+ORD-2023-1539,2024-03-18,CUST-165,Corporate,West,Furniture,Tables,657.3,4,0.0,65.73
+ORD-2023-1540,2024-03-29,CUST-189,Consumer,South,Office Supplies,Paper,14.68,1,0.7,-3.6
+ORD-2023-1541,2023-05-08,CUST-301,Corporate,East,Office Supplies,Storage,56.36,5,0.3,3.1
+ORD-2023-1542,2024-08-05,CUST-216,Home Office,South,Office Supplies,Storage,244.46,7,0.1,50.11
+ORD-2023-1543,2023-11-13,CUST-264,Consumer,North,Furniture,Chairs,3213.07,7,0.0,321.31
+ORD-2023-1544,2024-10-13,CUST-121,Consumer,South,Office Supplies,Paper,166.64,4,0.2,21.66
+ORD-2023-1545,2023-06-07,CUST-266,Corporate,West,Office Supplies,Paper,200.79,7,0.3,11.04
+ORD-2023-1546,2024-03-11,CUST-141,Consumer,East,Technology,Accessories,1051.33,6,0.1,173.47
+ORD-2023-1547,2023-07-24,CUST-306,Consumer,East,Office Supplies,Storage,103.1,3,0.0,28.87
+ORD-2023-1548,2024-03-06,CUST-274,Consumer,East,Furniture,Tables,1549.28,8,0.0,154.93
+ORD-2023-1549,2023-12-31,CUST-176,Corporate,East,Technology,Phones,2183.02,3,0.1,360.2
+ORD-2023-1550,2023-03-23,CUST-307,Corporate,North,Office Supplies,Paper,311.88,5,0.0,87.33
+ORD-2023-1551,2024-08-29,CUST-233,Home Office,West,Technology,Phones,2471.01,9,0.0,593.04
+ORD-2023-1552,2024-05-07,CUST-191,Consumer,West,Office Supplies,Paper,171.2,2,0.0,47.94
+ORD-2023-1553,2024-04-07,CUST-339,Corporate,South,Furniture,Bookcases,26.8,1,0.7,-11.39
+ORD-2023-1554,2024-11-19,CUST-210,Consumer,West,Furniture,Furnishings,603.63,5,0.0,60.36
+ORD-2023-1555,2023-05-30,CUST-246,Home Office,East,Furniture,Chairs,618.58,2,0.1,15.46
+ORD-2023-1556,2024-12-15,CUST-218,Corporate,West,Technology,Laptops,3236.4,8,0.1,534.01
+ORD-2023-1557,2024-03-16,CUST-225,Corporate,South,Technology,Accessories,542.12,1,0.3,8.13
+ORD-2023-1558,2023-02-12,CUST-153,Consumer,East,Office Supplies,Paper,309.35,6,0.1,63.42
+ORD-2023-1559,2023-02-12,CUST-331,Consumer,South,Furniture,Bookcases,2345.6,7,0.3,-293.2
+ORD-2023-1560,2023-04-02,CUST-245,Corporate,South,Furniture,Tables,1145.86,7,0.5,-315.11
+ORD-2023-1561,2024-02-19,CUST-278,Consumer,North,Technology,Phones,282.61,2,0.3,4.24
+ORD-2023-1562,2023-09-13,CUST-189,Consumer,East,Office Supplies,Art,298.3,5,0.2,38.78
+ORD-2023-1563,2024-01-05,CUST-293,Consumer,North,Technology,Phones,782.79,5,0.2,70.45
+ORD-2023-1564,2023-07-27,CUST-267,Consumer,West,Technology,Laptops,906.98,6,0.1,149.65
+ORD-2023-1565,2023-04-03,CUST-134,Corporate,North,Furniture,Chairs,231.89,1,0.0,23.19
+ORD-2023-1566,2024-10-07,CUST-246,Consumer,East,Technology,Phones,1472.39,2,0.1,242.94
+ORD-2023-1567,2024-08-05,CUST-203,Corporate,West,Furniture,Tables,447.42,3,0.0,44.74
+ORD-2023-1568,2023-06-27,CUST-138,Corporate,East,Technology,Phones,3669.39,6,0.0,880.65
+ORD-2023-1569,2024-06-04,CUST-103,Consumer,North,Office Supplies,Binders,190.22,4,0.1,39.0
+ORD-2023-1570,2024-04-12,CUST-104,Consumer,South,Office Supplies,Binders,176.47,3,0.2,22.94
+ORD-2023-1571,2024-02-11,CUST-209,Consumer,West,Office Supplies,Paper,966.37,9,0.0,270.58
+ORD-2023-1572,2023-02-11,CUST-173,Consumer,North,Technology,Accessories,1680.14,4,0.2,151.21
+ORD-2023-1573,2024-10-18,CUST-184,Consumer,South,Technology,Accessories,3014.86,7,0.3,45.22
+ORD-2023-1574,2024-11-03,CUST-336,Consumer,West,Technology,Accessories,792.84,2,0.0,190.28
+ORD-2023-1575,2024-04-28,CUST-291,Corporate,North,Office Supplies,Art,161.69,3,0.1,33.15
+ORD-2023-1576,2024-04-02,CUST-335,Consumer,South,Furniture,Furnishings,2730.17,8,0.2,-136.51
+ORD-2023-1577,2024-10-07,CUST-345,Corporate,East,Office Supplies,Binders,146.61,3,0.5,-13.93
+ORD-2023-1578,2023-03-20,CUST-254,Consumer,East,Technology,Printers,263.79,1,0.3,3.96
+ORD-2023-1579,2024-07-19,CUST-174,Home Office,East,Technology,Laptops,1370.37,9,0.2,123.33
+ORD-2023-1580,2024-01-03,CUST-283,Consumer,North,Technology,Laptops,2592.87,3,0.0,622.29
+ORD-2023-1581,2023-06-19,CUST-290,Consumer,West,Office Supplies,Storage,161.43,7,0.2,20.99
+ORD-2023-1582,2023-03-01,CUST-307,Consumer,West,Furniture,Bookcases,1764.26,8,0.5,-485.17
+ORD-2023-1583,2024-09-03,CUST-332,Corporate,West,Furniture,Chairs,127.57,1,0.2,-6.38
+ORD-2023-1584,2023-08-10,CUST-113,Home Office,West,Furniture,Furnishings,1700.01,4,0.1,42.5
+ORD-2023-1585,2024-04-28,CUST-178,Consumer,South,Office Supplies,Binders,80.94,2,0.3,4.45
+ORD-2023-1586,2023-02-21,CUST-197,Consumer,East,Technology,Laptops,1306.66,3,0.3,19.6
+ORD-2023-1587,2024-07-12,CUST-177,Home Office,West,Furniture,Furnishings,103.59,1,0.0,10.36
+ORD-2023-1588,2023-09-05,CUST-153,Consumer,East,Furniture,Tables,372.91,9,0.7,-158.49
+ORD-2023-1589,2023-12-08,CUST-328,Consumer,East,Furniture,Chairs,883.74,5,0.3,-110.47
+ORD-2023-1590,2024-08-13,CUST-325,Consumer,North,Furniture,Chairs,2494.09,7,0.1,62.35
+ORD-2023-1591,2024-06-21,CUST-296,Home Office,South,Technology,Phones,573.15,3,0.0,137.56
+ORD-2023-1592,2024-09-12,CUST-209,Home Office,West,Technology,Accessories,3680.02,6,0.2,331.2
+ORD-2023-1593,2024-09-22,CUST-260,Consumer,East,Office Supplies,Binders,36.26,2,0.2,4.71
+ORD-2023-1594,2024-06-01,CUST-155,Consumer,West,Technology,Printers,380.75,2,0.0,91.38
+ORD-2023-1595,2024-03-25,CUST-245,Consumer,South,Technology,Laptops,3730.39,7,0.3,55.96
+ORD-2023-1596,2024-09-15,CUST-139,Consumer,East,Technology,Laptops,1076.09,7,0.7,-306.69
+ORD-2023-1597,2023-07-21,CUST-274,Home Office,West,Office Supplies,Art,248.99,5,0.3,13.69
+ORD-2023-1598,2023-10-18,CUST-212,Home Office,North,Technology,Accessories,2681.75,6,0.5,-362.04
+ORD-2023-1599,2023-06-18,CUST-302,Consumer,South,Technology,Accessories,1140.63,3,0.1,188.2
+ORD-2024-1600,2024-10-13,CUST-241,Home Office,East,Furniture,Chairs,410.03,2,0.0,41.0
+ORD-2024-1601,2024-04-30,CUST-151,Consumer,East,Office Supplies,Storage,220.98,2,0.0,61.87
+ORD-2024-1602,2024-09-14,CUST-153,Consumer,West,Technology,Phones,1144.13,5,0.1,188.78
+ORD-2024-1603,2023-01-10,CUST-271,Corporate,West,Furniture,Chairs,296.97,1,0.3,-37.12
+ORD-2024-1604,2024-03-12,CUST-277,Consumer,South,Furniture,Tables,1840.9,7,0.2,-92.05
+ORD-2024-1605,2023-08-12,CUST-297,Consumer,East,Furniture,Tables,130.88,1,0.1,3.27
+ORD-2024-1606,2024-07-25,CUST-196,Consumer,North,Technology,Phones,1209.91,7,0.5,-163.34
+ORD-2024-1607,2023-02-01,CUST-186,Corporate,North,Technology,Printers,1445.27,2,0.0,346.86
+ORD-2024-1608,2024-03-22,CUST-268,Corporate,South,Furniture,Chairs,2179.61,7,0.1,54.49
+ORD-2024-1609,2024-10-22,CUST-170,Home Office,West,Office Supplies,Paper,326.97,4,0.0,91.55
+ORD-2024-1610,2024-08-16,CUST-291,Consumer,South,Office Supplies,Fasteners,119.81,3,0.0,33.55
+ORD-2024-1611,2024-11-02,CUST-285,Home Office,South,Furniture,Furnishings,145.01,1,0.1,3.63
+ORD-2024-1612,2023-05-10,CUST-302,Consumer,South,Technology,Accessories,1102.72,6,0.1,181.95
+ORD-2024-1613,2023-02-10,CUST-244,Consumer,North,Furniture,Bookcases,1134.47,8,0.0,113.45
+ORD-2024-1614,2023-06-16,CUST-211,Home Office,North,Office Supplies,Binders,448.95,4,0.0,125.71
+ORD-2024-1615,2024-02-23,CUST-141,Home Office,East,Office Supplies,Fasteners,131.6,8,0.3,7.24
+ORD-2024-1616,2023-04-30,CUST-219,Home Office,North,Office Supplies,Paper,367.89,4,0.2,47.83
+ORD-2024-1617,2024-02-21,CUST-125,Consumer,South,Technology,Phones,4022.35,5,0.0,965.36
+ORD-2024-1618,2023-11-02,CUST-116,Home Office,East,Technology,Printers,620.61,3,0.5,-83.78
+ORD-2024-1619,2023-08-04,CUST-199,Consumer,South,Furniture,Furnishings,902.65,7,0.7,-383.63
+ORD-2024-1620,2024-11-08,CUST-109,Consumer,East,Furniture,Tables,1475.53,6,0.0,147.55
+ORD-2024-1621,2023-02-15,CUST-142,Consumer,East,Furniture,Furnishings,506.55,4,0.2,-25.33
+ORD-2024-1622,2023-03-23,CUST-302,Consumer,East,Furniture,Chairs,1167.01,3,0.2,-58.35
+ORD-2024-1623,2024-03-17,CUST-248,Corporate,West,Office Supplies,Binders,553.41,8,0.2,71.94
+ORD-2024-1624,2023-05-29,CUST-229,Consumer,North,Technology,Laptops,3085.4,7,0.0,740.5
+ORD-2024-1625,2023-04-21,CUST-143,Corporate,East,Office Supplies,Storage,235.68,4,0.0,65.99
+ORD-2024-1626,2024-04-11,CUST-150,Consumer,North,Technology,Printers,2742.51,4,0.1,452.51
+ORD-2024-1627,2023-05-19,CUST-110,Home Office,South,Furniture,Bookcases,1421.89,5,0.3,-177.74
+ORD-2024-1628,2023-07-17,CUST-248,Corporate,East,Office Supplies,Fasteners,106.89,3,0.0,29.93
+ORD-2024-1629,2024-06-22,CUST-207,Consumer,East,Office Supplies,Paper,316.82,7,0.5,-30.1
+ORD-2024-1630,2023-03-08,CUST-269,Consumer,East,Furniture,Tables,847.67,3,0.0,84.77
+ORD-2024-1631,2023-04-30,CUST-197,Corporate,West,Furniture,Tables,1121.98,3,0.2,-56.1
+ORD-2024-1632,2023-05-13,CUST-223,Corporate,East,Technology,Accessories,4103.25,9,0.0,984.78
+ORD-2024-1633,2024-01-09,CUST-335,Corporate,South,Technology,Printers,2992.35,6,0.3,44.89
+ORD-2024-1634,2023-09-07,CUST-173,Corporate,South,Office Supplies,Binders,633.37,6,0.0,177.34
+ORD-2024-1635,2024-10-24,CUST-347,Consumer,East,Technology,Phones,192.65,3,0.7,-54.91
+ORD-2024-1636,2023-05-10,CUST-303,Consumer,East,Technology,Accessories,5130.83,8,0.1,846.59
+ORD-2024-1637,2023-06-22,CUST-279,Consumer,West,Technology,Laptops,2154.67,9,0.0,517.12
+ORD-2024-1638,2023-11-02,CUST-328,Consumer,North,Furniture,Bookcases,926.87,5,0.0,92.69
+ORD-2024-1639,2023-01-29,CUST-152,Corporate,South,Furniture,Tables,1899.7,8,0.3,-237.46
+ORD-2024-1640,2023-03-13,CUST-167,Corporate,West,Office Supplies,Storage,62.47,1,0.2,8.12
+ORD-2024-1641,2024-09-02,CUST-348,Consumer,North,Office Supplies,Storage,22.54,1,0.1,4.62
+ORD-2024-1642,2023-12-16,CUST-222,Consumer,North,Office Supplies,Fasteners,107.19,3,0.3,5.9
+ORD-2024-1643,2023-03-15,CUST-328,Home Office,North,Office Supplies,Paper,391.69,5,0.0,109.67
+ORD-2024-1644,2023-10-11,CUST-104,Corporate,North,Office Supplies,Art,363.34,9,0.3,19.98
+ORD-2024-1645,2023-05-19,CUST-259,Consumer,North,Office Supplies,Binders,706.73,8,0.2,91.87
+ORD-2024-1646,2023-08-03,CUST-336,Consumer,West,Furniture,Furnishings,2241.52,5,0.1,56.04
+ORD-2024-1647,2023-04-17,CUST-205,Consumer,North,Office Supplies,Fasteners,288.55,4,0.3,15.87
+ORD-2024-1648,2023-01-25,CUST-281,Consumer,South,Furniture,Chairs,1377.51,9,0.5,-378.82
+ORD-2024-1649,2024-03-23,CUST-155,Corporate,West,Technology,Laptops,2140.05,6,0.0,513.61
+ORD-2024-1650,2024-03-27,CUST-281,Corporate,North,Office Supplies,Storage,285.49,6,0.0,79.94
+ORD-2024-1651,2023-07-23,CUST-263,Consumer,West,Technology,Printers,3529.85,4,0.0,847.16
+ORD-2024-1652,2024-03-28,CUST-103,Home Office,North,Furniture,Chairs,1562.49,9,0.2,-78.12
+ORD-2024-1653,2023-12-19,CUST-266,Consumer,East,Technology,Laptops,1349.81,4,0.1,222.72
+ORD-2024-1654,2024-04-22,CUST-137,Corporate,North,Technology,Accessories,1424.56,6,0.1,235.05
+ORD-2024-1655,2024-07-26,CUST-225,Corporate,South,Technology,Accessories,1700.97,2,0.0,408.23
+ORD-2024-1656,2023-01-28,CUST-179,Corporate,South,Furniture,Furnishings,2588.16,7,0.2,-129.41
+ORD-2024-1657,2024-01-22,CUST-213,Consumer,East,Office Supplies,Storage,302.33,4,0.2,39.3
+ORD-2024-1658,2024-09-13,CUST-186,Consumer,North,Furniture,Chairs,1794.62,4,0.0,179.46
+ORD-2024-1659,2023-04-25,CUST-257,Corporate,West,Technology,Accessories,351.44,1,0.3,5.27
+ORD-2024-1660,2024-03-18,CUST-133,Corporate,South,Technology,Printers,1100.1,7,0.0,264.02
+ORD-2024-1661,2024-08-13,CUST-318,Consumer,East,Technology,Printers,2438.39,5,0.0,585.21
+ORD-2024-1662,2024-12-09,CUST-244,Home Office,North,Technology,Printers,3622.01,5,0.0,869.28
+ORD-2024-1663,2024-07-11,CUST-177,Home Office,South,Technology,Accessories,2212.88,3,0.0,531.09
+ORD-2024-1664,2024-03-14,CUST-318,Consumer,East,Furniture,Bookcases,2216.27,6,0.2,-110.81
+ORD-2024-1665,2024-03-18,CUST-297,Consumer,East,Office Supplies,Art,134.98,5,0.1,27.67
+ORD-2024-1666,2024-11-16,CUST-252,Consumer,West,Office Supplies,Binders,252.85,5,0.1,51.83
+ORD-2024-1667,2023-11-13,CUST-314,Consumer,North,Furniture,Bookcases,207.35,2,0.5,-57.02
+ORD-2024-1668,2023-10-10,CUST-217,Consumer,West,Technology,Phones,1365.17,2,0.2,122.87
+ORD-2024-1669,2023-04-27,CUST-116,Consumer,West,Office Supplies,Art,99.59,2,0.2,12.95
+ORD-2024-1670,2023-06-03,CUST-296,Home Office,North,Office Supplies,Storage,78.63,8,0.7,-19.26
+ORD-2024-1671,2023-02-11,CUST-111,Corporate,North,Office Supplies,Fasteners,103.64,5,0.7,-25.39
+ORD-2024-1672,2023-04-06,CUST-262,Consumer,North,Office Supplies,Storage,786.4,9,0.1,161.21
+ORD-2024-1673,2024-02-20,CUST-195,Consumer,East,Technology,Printers,327.0,1,0.0,78.48
+ORD-2024-1674,2024-04-11,CUST-181,Consumer,West,Furniture,Tables,496.76,2,0.3,-62.09
+ORD-2024-1675,2024-09-16,CUST-300,Consumer,East,Furniture,Tables,1027.32,6,0.1,25.68
+ORD-2024-1676,2023-06-25,CUST-255,Corporate,East,Office Supplies,Storage,411.73,4,0.0,115.28
+ORD-2024-1677,2023-08-20,CUST-316,Consumer,South,Furniture,Tables,523.71,6,0.3,-65.46
+ORD-2024-1678,2023-09-12,CUST-293,Corporate,West,Technology,Printers,3903.62,6,0.1,644.1
+ORD-2024-1679,2023-11-17,CUST-346,Consumer,West,Furniture,Tables,3083.78,9,0.1,77.09
+ORD-2024-1680,2023-12-24,CUST-277,Corporate,East,Technology,Laptops,1562.43,2,0.0,374.98
+ORD-2024-1681,2023-10-28,CUST-244,Home Office,North,Technology,Accessories,544.58,3,0.1,89.86
+ORD-2024-1682,2024-03-22,CUST-301,Corporate,North,Furniture,Furnishings,610.88,4,0.1,15.27
+ORD-2024-1683,2023-01-06,CUST-267,Home Office,South,Furniture,Chairs,1248.17,3,0.0,124.82
+ORD-2024-1684,2024-05-30,CUST-105,Corporate,East,Furniture,Furnishings,1574.29,4,0.0,157.43
+ORD-2024-1685,2024-05-09,CUST-317,Home Office,East,Technology,Accessories,1277.52,4,0.0,306.6
+ORD-2024-1686,2023-11-16,CUST-112,Consumer,South,Technology,Accessories,4660.92,8,0.3,69.91
+ORD-2024-1687,2023-06-12,CUST-272,Consumer,East,Office Supplies,Art,760.9,9,0.1,155.98
+ORD-2024-1688,2023-01-02,CUST-166,Home Office,East,Technology,Laptops,3585.03,8,0.2,322.65
+ORD-2024-1689,2023-02-06,CUST-252,Home Office,South,Technology,Accessories,1568.43,4,0.0,376.42
+ORD-2024-1690,2024-02-03,CUST-183,Corporate,West,Technology,Phones,1580.67,6,0.3,23.71
+ORD-2024-1691,2023-03-24,CUST-330,Corporate,East,Furniture,Chairs,245.26,1,0.1,6.13
+ORD-2024-1692,2024-08-16,CUST-201,Consumer,South,Technology,Phones,630.49,2,0.0,151.32
+ORD-2024-1693,2023-04-15,CUST-247,Consumer,East,Office Supplies,Fasteners,425.22,7,0.0,119.06
+ORD-2024-1694,2024-03-26,CUST-137,Consumer,East,Technology,Laptops,1762.22,7,0.0,422.93
+ORD-2024-1695,2023-10-06,CUST-224,Corporate,West,Office Supplies,Fasteners,276.81,3,0.0,77.51
+ORD-2024-1696,2023-05-03,CUST-302,Consumer,South,Furniture,Tables,425.73,4,0.7,-180.94
+ORD-2024-1697,2024-06-06,CUST-134,Home Office,North,Office Supplies,Paper,193.19,2,0.1,39.6
+ORD-2024-1698,2024-04-13,CUST-291,Corporate,West,Office Supplies,Binders,75.56,3,0.0,21.16
+ORD-2024-1699,2024-08-17,CUST-148,Home Office,East,Office Supplies,Paper,85.9,2,0.1,17.61
+ORD-2024-1700,2023-09-01,CUST-335,Consumer,East,Office Supplies,Storage,338.14,5,0.2,43.96
+ORD-2024-1701,2023-02-11,CUST-112,Consumer,East,Technology,Accessories,1019.08,5,0.2,91.72
+ORD-2024-1702,2023-11-20,CUST-107,Corporate,West,Furniture,Chairs,1815.71,6,0.3,-226.96
+ORD-2024-1703,2023-11-18,CUST-157,Corporate,South,Office Supplies,Fasteners,474.02,5,0.0,132.73
+ORD-2024-1704,2024-03-12,CUST-217,Consumer,East,Furniture,Chairs,950.21,6,0.0,95.02
+ORD-2024-1705,2023-10-16,CUST-348,Consumer,West,Office Supplies,Binders,65.34,6,0.7,-16.01
+ORD-2024-1706,2023-09-09,CUST-314,Consumer,West,Furniture,Furnishings,308.5,1,0.1,7.71
+ORD-2024-1707,2024-05-09,CUST-228,Consumer,South,Office Supplies,Paper,120.4,2,0.3,6.62
+ORD-2024-1708,2023-02-25,CUST-181,Home Office,North,Furniture,Chairs,2437.77,6,0.0,243.78
+ORD-2024-1709,2024-08-23,CUST-228,Home Office,East,Technology,Phones,2521.34,4,0.0,605.12
+ORD-2024-1710,2023-01-24,CUST-253,Corporate,North,Office Supplies,Binders,285.95,8,0.1,58.62
+ORD-2024-1711,2023-12-15,CUST-281,Corporate,West,Technology,Laptops,1871.72,8,0.1,308.83
+ORD-2024-1712,2024-10-06,CUST-240,Corporate,East,Furniture,Tables,694.33,3,0.5,-190.94
+ORD-2024-1713,2024-12-09,CUST-106,Consumer,West,Technology,Accessories,1187.35,7,0.5,-160.29
+ORD-2024-1714,2024-09-24,CUST-216,Home Office,East,Technology,Printers,1999.08,7,0.1,329.85
+ORD-2024-1715,2024-11-11,CUST-179,Consumer,East,Office Supplies,Binders,271.33,6,0.1,55.62
+ORD-2024-1716,2023-11-01,CUST-167,Corporate,North,Office Supplies,Storage,371.53,4,0.1,76.16
+ORD-2024-1717,2024-10-27,CUST-202,Consumer,North,Office Supplies,Paper,137.76,2,0.2,17.91
+ORD-2024-1718,2023-01-13,CUST-200,Home Office,East,Technology,Laptops,696.86,3,0.7,-198.61
+ORD-2024-1719,2023-05-13,CUST-101,Home Office,West,Technology,Laptops,1219.39,7,0.3,18.29
+ORD-2024-1720,2023-03-19,CUST-232,Consumer,West,Office Supplies,Fasteners,265.05,7,0.0,74.21
+ORD-2024-1721,2024-07-02,CUST-245,Home Office,West,Office Supplies,Paper,652.31,9,0.1,133.72
+ORD-2024-1722,2023-07-12,CUST-192,Consumer,North,Office Supplies,Fasteners,543.21,6,0.0,152.1
+ORD-2024-1723,2023-08-04,CUST-163,Consumer,West,Furniture,Chairs,675.49,3,0.1,16.89
+ORD-2024-1724,2023-02-03,CUST-218,Home Office,South,Furniture,Tables,3764.78,9,0.0,376.48
+ORD-2024-1725,2024-04-22,CUST-236,Corporate,North,Office Supplies,Fasteners,43.88,5,0.7,-10.75
+ORD-2024-1726,2023-02-14,CUST-236,Consumer,North,Office Supplies,Storage,109.18,3,0.0,30.57
+ORD-2024-1727,2023-09-04,CUST-288,Consumer,South,Office Supplies,Art,303.57,3,0.0,85.0
+ORD-2024-1728,2023-04-14,CUST-155,Consumer,West,Office Supplies,Art,247.27,5,0.2,32.15
+ORD-2024-1729,2023-05-06,CUST-125,Consumer,East,Furniture,Chairs,548.31,6,0.7,-233.03
+ORD-2024-1730,2024-04-02,CUST-197,Home Office,South,Office Supplies,Storage,90.07,1,0.0,25.22
+ORD-2024-1731,2023-10-28,CUST-224,Corporate,North,Technology,Printers,1636.78,5,0.0,392.83
+ORD-2024-1732,2023-08-19,CUST-306,Consumer,West,Furniture,Chairs,3188.1,8,0.1,79.7
+ORD-2024-1733,2023-01-14,CUST-266,Corporate,North,Office Supplies,Storage,208.17,3,0.0,58.29
+ORD-2024-1734,2024-06-21,CUST-171,Consumer,East,Technology,Phones,3060.24,7,0.0,734.46
+ORD-2024-1735,2023-06-20,CUST-117,Corporate,East,Furniture,Chairs,307.32,1,0.0,30.73
+ORD-2024-1736,2023-05-28,CUST-233,Corporate,East,Furniture,Furnishings,134.88,1,0.0,13.49
+ORD-2024-1737,2024-07-30,CUST-169,Corporate,East,Furniture,Furnishings,274.85,1,0.0,27.49
+ORD-2024-1738,2024-08-21,CUST-203,Corporate,East,Furniture,Tables,2470.18,6,0.1,61.75
+ORD-2024-1739,2023-03-13,CUST-112,Consumer,North,Furniture,Chairs,1207.85,9,0.1,30.2
+ORD-2024-1740,2024-11-03,CUST-291,Consumer,East,Office Supplies,Storage,838.34,8,0.0,234.74
+ORD-2024-1741,2024-02-26,CUST-296,Home Office,South,Technology,Accessories,801.82,3,0.2,72.16
+ORD-2024-1742,2024-12-01,CUST-123,Consumer,West,Technology,Phones,303.3,2,0.1,50.04
+ORD-2024-1743,2023-10-08,CUST-332,Consumer,North,Office Supplies,Paper,116.18,6,0.0,32.53
+ORD-2024-1744,2023-01-15,CUST-128,Consumer,South,Office Supplies,Storage,567.56,6,0.1,116.35
+ORD-2024-1745,2023-04-25,CUST-186,Consumer,North,Office Supplies,Binders,284.62,6,0.0,79.69
+ORD-2024-1746,2023-04-07,CUST-222,Consumer,West,Technology,Accessories,673.61,4,0.2,60.62
+ORD-2024-1747,2023-03-04,CUST-184,Consumer,West,Office Supplies,Art,699.97,6,0.0,195.99
+ORD-2024-1748,2024-11-16,CUST-319,Home Office,South,Technology,Phones,4437.04,7,0.0,1064.89
+ORD-2024-1749,2024-01-22,CUST-157,Corporate,North,Furniture,Chairs,272.15,3,0.1,6.8
+ORD-2024-1750,2023-01-10,CUST-259,Home Office,East,Furniture,Chairs,1322.87,4,0.1,33.07
+ORD-2024-1751,2023-06-01,CUST-214,Consumer,East,Technology,Accessories,1829.51,3,0.0,439.08
+ORD-2024-1752,2024-04-08,CUST-258,Consumer,East,Office Supplies,Paper,181.57,6,0.7,-44.48
+ORD-2024-1753,2023-05-29,CUST-333,Corporate,North,Office Supplies,Binders,84.74,2,0.0,23.73
+ORD-2024-1754,2024-09-08,CUST-277,Consumer,West,Technology,Printers,2037.77,9,0.0,489.06
+ORD-2024-1755,2024-03-24,CUST-123,Consumer,East,Furniture,Tables,715.95,5,0.2,-35.8
+ORD-2024-1756,2024-07-31,CUST-250,Consumer,East,Furniture,Furnishings,354.15,3,0.2,-17.71
+ORD-2024-1757,2024-09-06,CUST-192,Home Office,West,Furniture,Chairs,2086.42,9,0.0,208.64
+ORD-2024-1758,2023-10-11,CUST-260,Consumer,West,Office Supplies,Fasteners,92.12,1,0.1,18.88
+ORD-2024-1759,2024-11-03,CUST-173,Corporate,North,Office Supplies,Storage,316.87,5,0.1,64.96
+ORD-2024-1760,2023-06-21,CUST-349,Consumer,West,Office Supplies,Storage,18.69,1,0.0,5.23
+ORD-2024-1761,2023-07-29,CUST-233,Home Office,South,Technology,Accessories,1434.34,4,0.0,344.24
+ORD-2024-1762,2023-11-26,CUST-324,Corporate,North,Office Supplies,Paper,283.14,6,0.2,36.81
+ORD-2024-1763,2024-06-04,CUST-145,Consumer,East,Office Supplies,Fasteners,225.61,9,0.3,12.41
+ORD-2024-1764,2024-08-14,CUST-285,Consumer,West,Furniture,Bookcases,298.07,1,0.0,29.81
+ORD-2024-1765,2023-05-22,CUST-236,Home Office,South,Office Supplies,Storage,28.36,2,0.5,-2.69
+ORD-2024-1766,2024-04-19,CUST-110,Corporate,East,Office Supplies,Art,132.79,5,0.0,37.18
+ORD-2024-1767,2024-07-31,CUST-206,Consumer,East,Office Supplies,Art,126.26,5,0.3,6.94
+ORD-2024-1768,2023-02-25,CUST-174,Corporate,East,Technology,Accessories,2637.82,6,0.3,39.57
+ORD-2024-1769,2023-12-06,CUST-236,Corporate,North,Office Supplies,Fasteners,32.19,2,0.1,6.6
+ORD-2024-1770,2024-11-12,CUST-120,Corporate,North,Furniture,Furnishings,1269.49,8,0.0,126.95
+ORD-2024-1771,2024-06-20,CUST-319,Consumer,North,Office Supplies,Fasteners,128.3,2,0.3,7.06
+ORD-2024-1772,2023-12-19,CUST-180,Corporate,East,Furniture,Bookcases,183.94,2,0.1,4.6
+ORD-2024-1773,2024-08-25,CUST-180,Home Office,North,Furniture,Tables,385.03,2,0.1,9.63
+ORD-2024-1774,2023-12-26,CUST-181,Home Office,North,Technology,Laptops,2237.46,6,0.0,536.99
+ORD-2024-1775,2023-03-08,CUST-143,Home Office,West,Technology,Laptops,1601.33,6,0.0,384.32
+ORD-2024-1776,2023-03-09,CUST-141,Home Office,North,Office Supplies,Art,204.39,6,0.2,26.57
+ORD-2024-1777,2023-07-06,CUST-318,Corporate,West,Technology,Laptops,1309.44,6,0.1,216.06
+ORD-2024-1778,2024-11-01,CUST-267,Consumer,North,Technology,Laptops,6618.87,9,0.0,1588.53
+ORD-2024-1779,2023-05-18,CUST-211,Consumer,North,Furniture,Furnishings,2371.64,6,0.2,-118.58
+ORD-2024-1780,2023-12-29,CUST-203,Consumer,East,Furniture,Chairs,587.39,4,0.0,58.74
+ORD-2024-1781,2024-09-16,CUST-309,Consumer,North,Office Supplies,Fasteners,222.61,3,0.2,28.94
+ORD-2024-1782,2023-05-02,CUST-126,Consumer,East,Technology,Phones,2456.71,3,0.0,589.61
+ORD-2024-1783,2023-01-14,CUST-121,Home Office,North,Furniture,Bookcases,405.71,1,0.1,10.14
+ORD-2024-1784,2023-04-23,CUST-320,Consumer,West,Office Supplies,Storage,151.35,6,0.0,42.38
+ORD-2024-1785,2024-11-08,CUST-196,Home Office,East,Office Supplies,Paper,607.22,7,0.1,124.48
+ORD-2024-1786,2024-08-30,CUST-139,Corporate,West,Technology,Printers,685.21,1,0.0,164.45
+ORD-2024-1787,2023-04-12,CUST-306,Consumer,West,Technology,Printers,2833.79,8,0.5,-382.56
+ORD-2024-1788,2023-08-19,CUST-275,Corporate,South,Office Supplies,Binders,432.25,8,0.0,-605.15
+ORD-2024-1789,2023-11-15,CUST-195,Corporate,North,Furniture,Chairs,1190.0,5,0.0,119.0
+ORD-2024-1790,2024-03-08,CUST-304,Corporate,East,Office Supplies,Binders,458.37,9,0.0,128.34
+ORD-2024-1791,2024-02-20,CUST-235,Corporate,East,Furniture,Tables,101.0,1,0.1,2.52
+ORD-2024-1792,2023-05-20,CUST-217,Home Office,East,Office Supplies,Storage,15.16,1,0.2,1.97
+ORD-2024-1793,2023-07-12,CUST-111,Consumer,East,Furniture,Tables,1600.91,8,0.5,-440.25
+ORD-2024-1794,2023-06-28,CUST-174,Home Office,East,Furniture,Bookcases,442.78,4,0.0,44.28
+ORD-2024-1795,2024-05-17,CUST-189,Corporate,North,Technology,Printers,4611.0,7,0.1,760.81
+ORD-2024-1796,2024-01-25,CUST-240,Consumer,South,Furniture,Chairs,2480.44,9,0.0,248.04
+ORD-2024-1797,2024-03-29,CUST-300,Consumer,South,Technology,Printers,618.12,1,0.2,55.63
+ORD-2024-1798,2023-05-19,CUST-221,Consumer,North,Furniture,Tables,810.53,5,0.5,-222.9
+ORD-2024-1799,2024-10-02,CUST-161,Corporate,East,Furniture,Furnishings,2443.19,7,0.1,61.08
+ORD-2024-1800,2024-06-18,CUST-141,Corporate,South,Technology,Laptops,2280.39,4,0.2,205.24
+ORD-2024-1801,2023-11-15,CUST-213,Consumer,South,Furniture,Bookcases,248.39,1,0.2,-12.42
+ORD-2024-1802,2024-09-20,CUST-189,Consumer,East,Technology,Accessories,1602.2,6,0.5,-216.3
+ORD-2024-1803,2023-05-30,CUST-105,Consumer,South,Technology,Accessories,5050.36,9,0.2,454.53
+ORD-2024-1804,2024-12-12,CUST-235,Corporate,South,Furniture,Bookcases,656.55,9,0.5,-180.55
+ORD-2024-1805,2024-07-18,CUST-169,Home Office,East,Furniture,Furnishings,2289.12,8,0.0,228.91
+ORD-2024-1806,2024-02-09,CUST-222,Home Office,West,Furniture,Chairs,1157.53,6,0.0,115.75
+ORD-2024-1807,2024-04-17,CUST-271,Home Office,East,Technology,Phones,3785.93,8,0.0,908.62
+ORD-2024-1808,2024-08-28,CUST-230,Consumer,North,Office Supplies,Binders,252.58,8,0.1,51.78
+ORD-2024-1809,2023-06-15,CUST-245,Corporate,South,Office Supplies,Binders,103.1,1,0.1,21.14
+ORD-2024-1810,2024-09-05,CUST-169,Corporate,West,Furniture,Tables,1085.28,7,0.1,27.13
+ORD-2024-1811,2024-11-28,CUST-118,Corporate,West,Office Supplies,Paper,563.67,8,0.0,157.83
+ORD-2024-1812,2024-03-29,CUST-270,Consumer,North,Furniture,Furnishings,1387.96,8,0.1,34.7
+ORD-2024-1813,2023-11-02,CUST-136,Corporate,North,Office Supplies,Art,132.5,7,0.5,-12.59
+ORD-2024-1814,2024-10-03,CUST-110,Corporate,North,Furniture,Bookcases,715.85,7,0.1,17.9
+ORD-2024-1815,2023-01-26,CUST-187,Home Office,West,Office Supplies,Art,180.71,7,0.5,-17.17
+ORD-2024-1816,2024-07-17,CUST-133,Consumer,East,Office Supplies,Storage,66.58,2,0.1,13.65
+ORD-2024-1817,2023-06-12,CUST-118,Corporate,West,Technology,Laptops,4494.6,5,0.0,1078.7
+ORD-2024-1818,2023-02-27,CUST-348,Home Office,East,Furniture,Chairs,1735.72,8,0.0,173.57
+ORD-2024-1819,2023-06-30,CUST-264,Corporate,North,Office Supplies,Fasteners,97.42,4,0.3,5.36
+ORD-2024-1820,2023-08-31,CUST-238,Corporate,North,Furniture,Chairs,434.61,3,0.2,-21.73
+ORD-2024-1821,2023-08-29,CUST-282,Consumer,South,Furniture,Furnishings,3415.19,9,0.0,341.52
+ORD-2024-1822,2023-01-02,CUST-103,Consumer,North,Technology,Laptops,3258.17,9,0.2,293.24
+ORD-2024-1823,2023-09-14,CUST-155,Consumer,East,Office Supplies,Fasteners,458.17,7,0.1,93.92
+ORD-2024-1824,2024-09-26,CUST-196,Consumer,West,Technology,Printers,3229.47,8,0.3,48.44
+ORD-2024-1825,2024-10-19,CUST-220,Consumer,East,Office Supplies,Paper,45.13,1,0.0,12.64
+ORD-2024-1826,2023-11-23,CUST-255,Consumer,East,Technology,Accessories,1062.71,3,0.0,255.05
+ORD-2024-1827,2024-07-07,CUST-206,Home Office,East,Office Supplies,Binders,629.51,9,0.0,176.26
+ORD-2024-1828,2024-08-12,CUST-233,Home Office,South,Office Supplies,Art,369.18,9,0.0,103.37
+ORD-2024-1829,2024-01-17,CUST-297,Corporate,South,Office Supplies,Binders,127.17,3,0.1,26.07
+ORD-2024-1830,2023-12-16,CUST-138,Consumer,West,Furniture,Furnishings,2003.45,6,0.1,50.09
+ORD-2024-1831,2023-11-12,CUST-154,Home Office,West,Office Supplies,Binders,201.96,8,0.5,-19.19
+ORD-2024-1832,2023-07-04,CUST-114,Corporate,West,Furniture,Tables,2734.76,6,0.0,273.48
+ORD-2024-1833,2023-07-09,CUST-101,Consumer,West,Office Supplies,Binders,109.79,2,0.1,22.51
+ORD-2024-1834,2023-06-22,CUST-100,Consumer,North,Furniture,Tables,919.77,5,0.1,22.99
+ORD-2024-1835,2024-08-05,CUST-225,Corporate,West,Furniture,Chairs,1179.42,6,0.2,-58.97
+ORD-2024-1836,2023-09-06,CUST-251,Home Office,North,Office Supplies,Fasteners,662.56,7,0.1,135.82
+ORD-2024-1837,2024-09-21,CUST-180,Consumer,East,Technology,Laptops,440.73,3,0.1,72.72
+ORD-2024-1838,2023-01-12,CUST-205,Consumer,East,Furniture,Furnishings,622.96,3,0.1,15.57
+ORD-2024-1839,2023-08-01,CUST-172,Consumer,North,Furniture,Bookcases,1146.29,6,0.3,-143.29
+ORD-2024-1840,2023-07-12,CUST-205,Consumer,West,Technology,Printers,4311.01,9,0.0,1034.64
+ORD-2024-1841,2024-09-09,CUST-330,Consumer,East,Furniture,Bookcases,1149.21,5,0.3,-143.65
+ORD-2024-1842,2024-08-18,CUST-129,Corporate,East,Furniture,Chairs,470.7,8,0.5,-129.44
+ORD-2024-1843,2023-12-08,CUST-304,Consumer,West,Technology,Accessories,2074.68,4,0.2,186.72
+ORD-2024-1844,2023-01-03,CUST-224,Corporate,North,Technology,Laptops,3639.13,9,0.3,54.59
+ORD-2024-1845,2024-06-14,CUST-163,Home Office,North,Office Supplies,Binders,820.06,9,0.0,229.62
+ORD-2024-1846,2023-08-08,CUST-159,Consumer,West,Technology,Accessories,1042.63,6,0.7,-297.15
+ORD-2024-1847,2023-02-15,CUST-263,Consumer,North,Furniture,Furnishings,2498.79,9,0.1,62.47
+ORD-2024-1848,2023-06-17,CUST-307,Corporate,South,Office Supplies,Paper,327.16,4,0.0,91.6
+ORD-2024-1849,2024-08-03,CUST-164,Home Office,East,Technology,Phones,2622.45,7,0.1,432.7
+ORD-2024-1850,2024-03-07,CUST-281,Home Office,West,Technology,Printers,394.04,1,0.3,5.91
+ORD-2024-1851,2023-03-31,CUST-212,Consumer,East,Technology,Phones,2692.43,7,0.0,646.18
+ORD-2024-1852,2023-03-13,CUST-248,Consumer,North,Furniture,Furnishings,351.52,1,0.1,8.79
+ORD-2024-1853,2024-02-11,CUST-228,Consumer,North,Technology,Laptops,2720.35,4,0.1,448.86
+ORD-2024-1854,2023-06-19,CUST-169,Home Office,East,Office Supplies,Binders,117.4,2,0.5,-11.15
+ORD-2024-1855,2023-06-18,CUST-114,Corporate,North,Technology,Printers,1286.05,5,0.3,19.29
+ORD-2024-1856,2024-01-04,CUST-181,Consumer,North,Office Supplies,Fasteners,203.98,5,0.1,41.82
+ORD-2024-1857,2023-05-01,CUST-177,Consumer,East,Technology,Laptops,3065.82,7,0.1,505.86
+ORD-2024-1858,2024-09-07,CUST-307,Corporate,West,Furniture,Bookcases,112.54,1,0.1,2.81
+ORD-2024-1859,2023-07-18,CUST-316,Home Office,North,Office Supplies,Paper,259.68,9,0.2,33.76
+ORD-2024-1860,2023-05-10,CUST-158,Consumer,South,Furniture,Furnishings,1106.25,5,0.0,110.62
+ORD-2024-1861,2023-11-09,CUST-282,Corporate,East,Technology,Printers,3627.13,5,0.0,870.51
+ORD-2024-1862,2024-01-21,CUST-268,Consumer,West,Office Supplies,Storage,27.62,1,0.1,5.66
+ORD-2024-1863,2024-10-10,CUST-257,Consumer,East,Office Supplies,Paper,123.07,8,0.0,34.46
+ORD-2024-1864,2023-12-13,CUST-342,Corporate,East,Office Supplies,Art,164.86,6,0.3,9.07
+ORD-2024-1865,2023-09-29,CUST-279,Consumer,West,Office Supplies,Art,249.26,3,0.0,69.79
+ORD-2024-1866,2023-10-01,CUST-304,Consumer,West,Office Supplies,Art,267.91,4,0.1,54.92
+ORD-2024-1867,2024-04-17,CUST-157,Corporate,East,Furniture,Chairs,1915.45,6,0.1,47.89
+ORD-2024-1868,2023-04-03,CUST-157,Corporate,North,Office Supplies,Fasteners,134.57,2,0.0,37.68
+ORD-2024-1869,2024-03-02,CUST-289,Corporate,North,Furniture,Furnishings,450.54,1,0.0,45.05
+ORD-2024-1870,2024-09-27,CUST-115,Home Office,North,Technology,Laptops,434.9,4,0.3,6.52
+ORD-2024-1871,2024-04-06,CUST-175,Home Office,East,Furniture,Chairs,321.0,3,0.5,-88.28
+ORD-2024-1872,2024-04-07,CUST-163,Home Office,East,Technology,Laptops,1640.03,7,0.0,393.61
+ORD-2024-1873,2023-02-13,CUST-182,Consumer,South,Furniture,Tables,2056.51,9,0.0,205.65
+ORD-2024-1874,2023-05-20,CUST-188,Consumer,South,Furniture,Furnishings,1679.51,9,0.1,41.99
+ORD-2024-1875,2024-08-02,CUST-135,Consumer,West,Furniture,Chairs,2228.57,6,0.0,222.86
+ORD-2024-1876,2024-02-22,CUST-212,Home Office,East,Office Supplies,Storage,19.07,1,0.0,5.34
+ORD-2024-1877,2023-09-23,CUST-230,Home Office,South,Office Supplies,Fasteners,282.31,7,0.0,79.05
+ORD-2024-1878,2023-01-12,CUST-254,Corporate,North,Technology,Laptops,443.3,5,0.5,-59.85
+ORD-2024-1879,2023-09-14,CUST-306,Home Office,West,Office Supplies,Art,717.24,9,0.1,147.03
+ORD-2024-1880,2023-01-29,CUST-332,Consumer,North,Office Supplies,Binders,363.29,9,0.1,74.47
+ORD-2024-1881,2023-11-24,CUST-110,Consumer,West,Office Supplies,Paper,154.56,4,0.1,31.68
+ORD-2024-1882,2024-04-10,CUST-286,Corporate,North,Technology,Laptops,746.47,1,0.0,179.15
+ORD-2024-1883,2024-09-24,CUST-337,Consumer,East,Furniture,Bookcases,815.21,2,0.1,20.38
+ORD-2024-1884,2024-10-09,CUST-171,Consumer,South,Office Supplies,Paper,498.04,8,0.0,139.45
+ORD-2024-1885,2023-12-25,CUST-205,Consumer,East,Technology,Accessories,4321.66,7,0.0,1037.2
+ORD-2024-1886,2024-08-03,CUST-215,Corporate,East,Technology,Accessories,156.75,1,0.0,37.62
+ORD-2024-1887,2023-11-08,CUST-287,Corporate,North,Furniture,Furnishings,1260.81,6,0.0,126.08
+ORD-2024-1888,2023-12-14,CUST-137,Consumer,North,Office Supplies,Binders,513.68,5,0.0,143.83
+ORD-2024-1889,2023-07-18,CUST-157,Home Office,North,Office Supplies,Art,254.85,6,0.0,71.36
+ORD-2024-1890,2024-04-23,CUST-312,Corporate,South,Furniture,Chairs,695.19,7,0.2,-34.76
+ORD-2024-1891,2024-01-08,CUST-143,Consumer,South,Office Supplies,Art,771.99,7,0.0,216.16
+ORD-2024-1892,2024-07-18,CUST-309,Consumer,East,Furniture,Tables,281.05,1,0.0,28.11
+ORD-2024-1893,2023-07-23,CUST-108,Corporate,East,Furniture,Tables,1638.78,6,0.3,-204.85
+ORD-2024-1894,2024-12-09,CUST-114,Consumer,West,Office Supplies,Paper,71.54,4,0.1,14.67
+ORD-2024-1895,2024-06-26,CUST-217,Consumer,North,Technology,Phones,341.95,3,0.5,-46.16
+ORD-2024-1896,2024-08-13,CUST-265,Consumer,East,Furniture,Bookcases,642.69,4,0.2,-32.13
+ORD-2024-1897,2023-10-23,CUST-191,Corporate,South,Furniture,Bookcases,1984.92,5,0.1,49.62
+ORD-2024-1898,2023-07-18,CUST-337,Consumer,West,Office Supplies,Storage,38.4,3,0.5,-3.65
+ORD-2024-1899,2024-07-08,CUST-210,Home Office,South,Technology,Laptops,642.15,4,0.5,-86.69
+ORD-2024-1900,2023-05-07,CUST-339,Corporate,East,Technology,Laptops,5170.1,9,0.2,465.31
+ORD-2024-1901,2024-08-08,CUST-317,Consumer,North,Furniture,Chairs,2867.21,6,0.0,286.72
+ORD-2024-1902,2024-09-21,CUST-279,Consumer,West,Technology,Phones,2682.17,7,0.2,241.4
+ORD-2024-1903,2024-07-26,CUST-302,Consumer,West,Furniture,Chairs,766.43,6,0.1,19.16
+ORD-2024-1904,2023-03-19,CUST-333,Home Office,West,Technology,Accessories,1433.82,6,0.3,21.51
+ORD-2024-1905,2023-03-21,CUST-130,Consumer,East,Office Supplies,Paper,124.97,7,0.1,25.62
+ORD-2024-1906,2023-09-22,CUST-298,Corporate,West,Technology,Laptops,764.57,2,0.5,-103.22
+ORD-2024-1907,2024-03-07,CUST-100,Corporate,North,Office Supplies,Fasteners,70.21,1,0.3,3.86
+ORD-2024-1908,2024-08-22,CUST-120,Corporate,South,Office Supplies,Storage,141.75,4,0.7,-34.73
+ORD-2024-1909,2023-11-17,CUST-274,Consumer,West,Technology,Laptops,4526.51,6,0.0,1086.36
+ORD-2024-1910,2023-02-04,CUST-269,Consumer,South,Furniture,Furnishings,527.12,4,0.0,52.71
+ORD-2024-1911,2023-11-06,CUST-158,Corporate,North,Office Supplies,Fasteners,74.88,1,0.0,20.97
+ORD-2024-1912,2024-09-26,CUST-111,Corporate,East,Furniture,Chairs,3448.28,8,0.1,86.21
+ORD-2024-1913,2024-06-04,CUST-256,Corporate,North,Technology,Phones,726.0,3,0.1,119.79
+ORD-2024-1914,2024-11-26,CUST-277,Consumer,South,Office Supplies,Binders,85.35,1,0.0,23.9
+ORD-2024-1915,2024-08-22,CUST-329,Consumer,South,Technology,Printers,377.46,1,0.0,90.59
+ORD-2024-1916,2024-04-26,CUST-319,Home Office,South,Office Supplies,Paper,212.87,6,0.1,43.64
+ORD-2024-1917,2024-05-21,CUST-160,Corporate,East,Technology,Accessories,2621.6,9,0.0,629.18
+ORD-2024-1918,2023-09-11,CUST-135,Consumer,West,Technology,Accessories,2475.96,9,0.5,-334.25
+ORD-2024-1919,2024-08-20,CUST-211,Consumer,East,Technology,Phones,4425.67,9,0.2,398.31
+ORD-2024-1920,2024-11-08,CUST-221,Consumer,North,Technology,Phones,1105.32,5,0.2,99.48
+ORD-2024-1921,2023-05-07,CUST-267,Consumer,North,Office Supplies,Paper,223.84,4,0.0,62.68
+ORD-2024-1922,2023-09-26,CUST-225,Consumer,East,Furniture,Chairs,596.1,2,0.0,59.61
+ORD-2024-1923,2024-03-11,CUST-153,Consumer,North,Technology,Accessories,1590.18,3,0.2,143.12
+ORD-2024-1924,2023-05-06,CUST-227,Consumer,East,Office Supplies,Paper,108.96,1,0.0,30.51
+ORD-2024-1925,2024-06-03,CUST-222,Corporate,West,Technology,Printers,981.03,5,0.0,235.45
+ORD-2024-1926,2023-01-14,CUST-334,Corporate,North,Office Supplies,Binders,404.77,7,0.1,82.98
+ORD-2024-1927,2023-06-06,CUST-303,Consumer,South,Office Supplies,Paper,375.1,7,0.1,76.9
+ORD-2024-1928,2024-01-07,CUST-331,Consumer,East,Technology,Printers,171.55,1,0.2,15.44
+ORD-2024-1929,2023-11-16,CUST-173,Consumer,South,Technology,Printers,1745.16,4,0.2,157.06
+ORD-2024-1930,2024-04-22,CUST-128,Consumer,North,Office Supplies,Paper,109.16,1,0.0,30.56
+ORD-2024-1931,2023-01-04,CUST-230,Consumer,East,Technology,Phones,1267.14,2,0.0,304.11
+ORD-2024-1932,2024-08-29,CUST-137,Consumer,East,Office Supplies,Art,489.26,5,0.1,100.3
+ORD-2024-1933,2024-03-10,CUST-177,Home Office,West,Office Supplies,Art,226.77,6,0.1,46.49
+ORD-2024-1934,2024-03-15,CUST-266,Consumer,South,Technology,Printers,543.08,1,0.3,8.15
+ORD-2024-1935,2023-08-29,CUST-322,Corporate,East,Office Supplies,Binders,340.31,4,0.0,95.29
+ORD-2024-1936,2023-01-06,CUST-325,Consumer,North,Technology,Printers,4811.38,7,0.0,1154.73
+ORD-2024-1937,2023-10-31,CUST-287,Home Office,West,Office Supplies,Storage,526.83,6,0.0,147.51
+ORD-2024-1938,2024-09-12,CUST-296,Home Office,East,Technology,Accessories,3266.24,8,0.1,538.93
+ORD-2024-1939,2023-04-01,CUST-132,Corporate,North,Technology,Laptops,2489.8,7,0.1,410.82
+ORD-2024-1940,2023-05-14,CUST-141,Consumer,North,Technology,Phones,3613.63,7,0.0,867.27
+ORD-2024-1941,2023-06-22,CUST-224,Corporate,South,Office Supplies,Storage,173.56,3,0.5,-16.49
+ORD-2024-1942,2024-03-17,CUST-302,Consumer,West,Furniture,Furnishings,650.47,5,0.0,65.05
+ORD-2024-1943,2023-11-25,CUST-101,Consumer,West,Furniture,Chairs,1226.73,5,0.0,122.67
+ORD-2024-1944,2024-07-09,CUST-230,Consumer,North,Furniture,Chairs,1172.34,9,0.3,-146.54
+ORD-2024-1945,2023-03-17,CUST-272,Consumer,East,Furniture,Furnishings,1344.16,5,0.0,134.42
+ORD-2024-1946,2023-06-17,CUST-111,Corporate,East,Furniture,Furnishings,2410.75,7,0.1,60.27
+ORD-2024-1947,2023-09-04,CUST-132,Consumer,West,Office Supplies,Binders,310.22,3,0.1,63.6
+ORD-2024-1948,2024-06-21,CUST-121,Home Office,North,Technology,Laptops,2802.82,4,0.0,672.68
+ORD-2024-1949,2023-01-01,CUST-303,Consumer,East,Technology,Phones,1383.25,2,0.1,228.24
+ORD-2024-1950,2023-05-19,CUST-230,Home Office,West,Office Supplies,Storage,118.97,1,0.0,33.31
+ORD-2024-1951,2023-06-16,CUST-330,Corporate,North,Office Supplies,Storage,77.71,1,0.3,4.27
+ORD-2024-1952,2023-05-16,CUST-137,Corporate,West,Furniture,Tables,387.78,5,0.5,-106.64
+ORD-2024-1953,2023-12-07,CUST-111,Corporate,South,Technology,Phones,2103.25,9,0.2,189.29
+ORD-2024-1954,2023-04-24,CUST-138,Consumer,East,Office Supplies,Binders,275.61,9,0.5,-26.18
+ORD-2024-1955,2024-02-20,CUST-336,Home Office,South,Technology,Printers,548.66,3,0.0,131.68
+ORD-2024-1956,2023-04-03,CUST-185,Consumer,East,Furniture,Tables,458.85,2,0.0,45.89
+ORD-2024-1957,2024-05-11,CUST-270,Corporate,East,Furniture,Furnishings,495.16,8,0.3,-61.89
+ORD-2024-1958,2024-08-07,CUST-315,Consumer,North,Office Supplies,Binders,741.95,9,0.0,207.75
+ORD-2024-1959,2024-08-29,CUST-306,Consumer,South,Technology,Laptops,2343.6,5,0.3,35.15
+ORD-2024-1960,2024-07-04,CUST-196,Corporate,West,Technology,Accessories,2137.82,8,0.5,-288.61
+ORD-2024-1961,2024-11-25,CUST-192,Consumer,West,Technology,Accessories,2200.24,4,0.1,363.04
+ORD-2024-1962,2023-12-26,CUST-322,Consumer,South,Technology,Accessories,461.71,1,0.2,41.55
+ORD-2024-1963,2023-07-04,CUST-104,Consumer,North,Furniture,Bookcases,611.69,4,0.2,-30.58
+ORD-2024-1964,2024-06-24,CUST-310,Corporate,East,Furniture,Tables,750.61,3,0.2,-37.53
+ORD-2024-1965,2023-01-12,CUST-122,Consumer,South,Technology,Phones,3518.39,6,0.0,844.41
+ORD-2024-1966,2023-06-10,CUST-211,Consumer,East,Office Supplies,Fasteners,100.88,3,0.0,28.25
+ORD-2024-1967,2024-10-12,CUST-167,Corporate,South,Technology,Printers,1503.33,3,0.1,248.05
+ORD-2024-1968,2024-11-21,CUST-171,Corporate,North,Furniture,Tables,1187.63,5,0.2,-59.38
+ORD-2024-1969,2023-02-26,CUST-124,Home Office,North,Furniture,Chairs,741.49,3,0.1,18.54
+ORD-2024-1970,2023-02-03,CUST-137,Consumer,East,Technology,Laptops,4797.55,9,0.3,71.96
+ORD-2024-1971,2023-06-27,CUST-112,Home Office,West,Office Supplies,Binders,66.1,4,0.0,18.51
+ORD-2024-1972,2023-10-09,CUST-146,Corporate,West,Office Supplies,Binders,328.16,6,0.0,91.88
+ORD-2024-1973,2023-09-01,CUST-170,Consumer,North,Furniture,Tables,272.44,3,0.0,27.24
+ORD-2024-1974,2024-06-23,CUST-106,Consumer,East,Furniture,Tables,3133.36,9,0.0,313.34
+ORD-2024-1975,2023-12-19,CUST-333,Corporate,East,Technology,Laptops,521.56,3,0.5,-70.41
+ORD-2024-1976,2024-04-14,CUST-243,Home Office,North,Office Supplies,Storage,355.73,9,0.0,99.6
+ORD-2024-1977,2024-07-30,CUST-117,Consumer,South,Furniture,Tables,2480.5,5,0.0,248.05
+ORD-2024-1978,2023-07-05,CUST-200,Corporate,South,Technology,Phones,947.26,2,0.0,227.34
+ORD-2024-1979,2024-02-27,CUST-205,Corporate,West,Furniture,Bookcases,432.15,2,0.1,10.8
+ORD-2024-1980,2024-02-05,CUST-183,Consumer,West,Office Supplies,Art,455.22,9,0.1,93.32
+ORD-2024-1981,2023-10-25,CUST-244,Corporate,East,Technology,Laptops,1450.26,3,0.2,130.52
+ORD-2024-1982,2023-12-06,CUST-150,Consumer,South,Furniture,Bookcases,511.98,2,0.3,-64.0
+ORD-2024-1983,2024-09-15,CUST-310,Consumer,North,Technology,Phones,2126.64,9,0.3,31.9
+ORD-2024-1984,2023-12-23,CUST-224,Corporate,South,Furniture,Furnishings,722.68,7,0.0,72.27
+ORD-2024-1985,2024-02-18,CUST-213,Consumer,West,Furniture,Furnishings,986.93,2,0.0,98.69
+ORD-2024-1986,2024-08-27,CUST-348,Corporate,South,Technology,Phones,953.6,2,0.0,228.86
+ORD-2024-1987,2023-02-02,CUST-243,Corporate,North,Technology,Accessories,479.84,3,0.3,7.2
+ORD-2024-1988,2023-10-04,CUST-272,Consumer,South,Office Supplies,Fasteners,395.1,9,0.0,110.63
+ORD-2024-1989,2023-12-20,CUST-150,Consumer,West,Office Supplies,Fasteners,485.63,5,0.1,99.55
+ORD-2024-1990,2024-07-16,CUST-307,Consumer,North,Office Supplies,Art,901.48,9,0.0,252.41
+ORD-2024-1991,2024-09-26,CUST-186,Corporate,South,Furniture,Bookcases,146.25,1,0.2,-7.31
+ORD-2024-1992,2023-12-07,CUST-135,Corporate,East,Furniture,Tables,340.28,6,0.5,-93.58
+ORD-2024-1993,2024-04-01,CUST-219,Consumer,West,Technology,Phones,2616.98,4,0.1,431.8
+ORD-2024-1994,2023-01-27,CUST-339,Corporate,East,Furniture,Bookcases,2719.88,6,0.0,271.99
+ORD-2024-1995,2024-04-06,CUST-246,Home Office,North,Office Supplies,Binders,592.67,7,0.0,165.95
+ORD-2024-1996,2023-02-15,CUST-270,Home Office,West,Furniture,Furnishings,269.74,2,0.7,-114.64
+ORD-2024-1997,2023-01-28,CUST-128,Home Office,South,Office Supplies,Fasteners,70.99,5,0.2,9.23
+ORD-2024-1998,2023-10-30,CUST-224,Consumer,North,Office Supplies,Storage,297.31,3,0.1,60.95
+ORD-2024-1999,2023-09-11,CUST-107,Corporate,East,Furniture,Chairs,674.49,5,0.2,-33.72
+ORD-2024-2000,2023-08-12,CUST-257,Consumer,West,Furniture,Chairs,2142.6,6,0.0,214.26
+ORD-2024-2001,2023-06-14,CUST-348,Home Office,East,Technology,Laptops,829.28,3,0.1,136.83
+ORD-2024-2002,2024-05-22,CUST-147,Consumer,East,Office Supplies,Paper,597.52,8,0.0,167.31
+ORD-2024-2003,2024-08-14,CUST-335,Home Office,North,Technology,Accessories,3129.11,4,0.0,750.99
+ORD-2024-2004,2024-05-02,CUST-259,Consumer,West,Office Supplies,Paper,183.25,5,0.0,51.31
+ORD-2024-2005,2024-07-30,CUST-169,Consumer,East,Furniture,Furnishings,632.18,4,0.1,15.8
+ORD-2024-2006,2023-02-12,CUST-210,Consumer,North,Furniture,Bookcases,607.83,5,0.0,60.78
+ORD-2024-2007,2024-08-07,CUST-132,Consumer,West,Furniture,Bookcases,905.8,2,0.0,90.58
+ORD-2024-2008,2023-03-14,CUST-131,Corporate,East,Office Supplies,Storage,170.21,6,0.0,47.66
+ORD-2024-2009,2024-10-18,CUST-138,Consumer,South,Office Supplies,Art,329.96,4,0.0,92.39
+ORD-2024-2010,2024-03-30,CUST-148,Home Office,South,Technology,Laptops,1160.22,8,0.1,191.44
+ORD-2024-2011,2024-08-13,CUST-313,Consumer,South,Technology,Accessories,930.17,2,0.3,13.95
+ORD-2024-2012,2024-02-04,CUST-213,Consumer,South,Office Supplies,Paper,296.54,7,0.2,38.55
+ORD-2024-2013,2023-03-17,CUST-215,Corporate,West,Office Supplies,Storage,160.68,4,0.0,44.99
+ORD-2024-2014,2024-02-26,CUST-175,Home Office,South,Office Supplies,Storage,28.7,1,0.3,1.58
+ORD-2024-2015,2023-10-07,CUST-344,Home Office,West,Technology,Printers,3752.07,9,0.2,337.69
+ORD-2024-2016,2024-05-08,CUST-172,Corporate,West,Technology,Laptops,1911.66,6,0.2,172.05
+ORD-2024-2017,2023-06-24,CUST-124,Home Office,West,Technology,Phones,953.82,5,0.2,85.84
+ORD-2024-2018,2023-09-01,CUST-329,Home Office,West,Technology,Accessories,1458.37,3,0.1,240.63
+ORD-2024-2019,2024-11-30,CUST-307,Consumer,North,Furniture,Furnishings,2998.62,9,0.1,74.97
+ORD-2024-2020,2023-03-28,CUST-283,Corporate,North,Office Supplies,Storage,86.66,5,0.0,24.26
+ORD-2024-2021,2024-07-16,CUST-278,Home Office,East,Furniture,Bookcases,3649.39,8,0.0,364.94
+ORD-2024-2022,2023-05-11,CUST-212,Corporate,North,Office Supplies,Art,294.34,5,0.1,60.34
+ORD-2024-2023,2023-12-13,CUST-127,Home Office,North,Furniture,Bookcases,1334.91,3,0.1,33.37
+ORD-2024-2024,2024-07-31,CUST-184,Home Office,East,Furniture,Bookcases,143.3,1,0.2,-7.17
+ORD-2024-2025,2023-02-10,CUST-116,Consumer,North,Office Supplies,Binders,857.19,8,0.1,175.72
+ORD-2024-2026,2024-11-05,CUST-340,Consumer,North,Furniture,Tables,441.41,2,0.0,44.14
+ORD-2024-2027,2023-09-10,CUST-264,Corporate,South,Office Supplies,Fasteners,45.9,6,0.5,-4.36
+ORD-2024-2028,2023-09-29,CUST-106,Consumer,North,Office Supplies,Binders,149.62,2,0.3,8.23
+ORD-2024-2029,2024-07-01,CUST-141,Consumer,East,Technology,Printers,1155.08,3,0.0,277.22
+ORD-2024-2030,2024-10-30,CUST-158,Home Office,North,Office Supplies,Paper,29.4,1,0.1,6.03
+ORD-2024-2031,2023-04-01,CUST-195,Consumer,North,Furniture,Tables,2612.72,7,0.1,65.32
+ORD-2024-2032,2024-01-30,CUST-123,Consumer,North,Office Supplies,Fasteners,214.96,3,0.2,27.94
+ORD-2024-2033,2024-06-09,CUST-314,Consumer,East,Furniture,Bookcases,485.25,5,0.0,48.53
+ORD-2024-2034,2024-10-25,CUST-107,Consumer,North,Office Supplies,Paper,271.76,8,0.0,76.09
+ORD-2024-2035,2024-07-25,CUST-247,Home Office,East,Technology,Accessories,385.11,3,0.2,34.66
+ORD-2024-2036,2023-12-12,CUST-199,Consumer,South,Office Supplies,Art,142.32,7,0.3,7.83
+ORD-2024-2037,2024-06-18,CUST-243,Corporate,North,Furniture,Bookcases,132.56,2,0.7,-56.34
+ORD-2024-2038,2024-06-04,CUST-191,Consumer,West,Office Supplies,Storage,467.16,5,0.2,60.73
+ORD-2024-2039,2023-03-09,CUST-144,Corporate,West,Furniture,Furnishings,2986.2,8,0.0,298.62
+ORD-2024-2040,2024-07-21,CUST-118,Consumer,North,Technology,Printers,300.85,1,0.0,72.2
+ORD-2024-2041,2024-06-29,CUST-230,Corporate,West,Office Supplies,Paper,114.31,2,0.5,-10.86
+ORD-2024-2042,2024-09-16,CUST-209,Consumer,North,Office Supplies,Art,792.93,9,0.0,222.02
+ORD-2024-2043,2024-05-27,CUST-297,Home Office,North,Technology,Phones,3310.85,4,0.0,794.6
+ORD-2024-2044,2023-11-05,CUST-184,Consumer,West,Technology,Laptops,2219.94,8,0.0,532.79
+ORD-2024-2045,2024-07-19,CUST-233,Consumer,North,Office Supplies,Art,536.9,5,0.0,150.33
+ORD-2024-2046,2023-01-24,CUST-111,Home Office,South,Furniture,Furnishings,1576.89,4,0.1,39.42
+ORD-2024-2047,2024-08-23,CUST-243,Consumer,East,Technology,Phones,5668.62,9,0.3,85.03
+ORD-2024-2048,2023-06-18,CUST-313,Corporate,East,Furniture,Chairs,3335.12,9,0.1,83.38
+ORD-2024-2049,2023-02-15,CUST-238,Corporate,South,Furniture,Bookcases,830.71,3,0.0,83.07
+ORD-2024-2050,2023-06-13,CUST-321,Consumer,South,Furniture,Furnishings,2007.16,8,0.3,-250.89
+ORD-2024-2051,2024-02-09,CUST-123,Corporate,South,Office Supplies,Art,276.97,3,0.2,36.01
+ORD-2024-2052,2024-11-21,CUST-290,Corporate,North,Office Supplies,Binders,348.55,8,0.3,19.17
+ORD-2024-2053,2023-09-22,CUST-136,Corporate,East,Technology,Accessories,3794.43,7,0.3,56.92
+ORD-2024-2054,2023-06-23,CUST-151,Consumer,East,Furniture,Tables,809.75,3,0.0,80.98
+ORD-2024-2055,2024-10-01,CUST-125,Consumer,West,Technology,Accessories,2271.96,5,0.1,374.87
+ORD-2024-2056,2023-01-09,CUST-280,Corporate,South,Technology,Printers,138.23,1,0.2,12.44
+ORD-2024-2057,2023-02-16,CUST-344,Consumer,North,Office Supplies,Art,233.85,4,0.0,65.48
+ORD-2024-2058,2023-02-08,CUST-181,Corporate,North,Furniture,Tables,1680.69,8,0.0,168.07
+ORD-2024-2059,2024-04-29,CUST-262,Home Office,East,Technology,Accessories,1844.7,8,0.1,304.38
+ORD-2024-2060,2024-08-30,CUST-344,Home Office,West,Technology,Phones,494.56,1,0.1,81.6
+ORD-2024-2061,2023-07-01,CUST-111,Home Office,East,Furniture,Bookcases,1207.18,7,0.0,120.72
+ORD-2024-2062,2023-02-07,CUST-128,Consumer,East,Office Supplies,Storage,97.11,1,0.0,27.19
+ORD-2024-2063,2023-01-03,CUST-305,Consumer,South,Technology,Phones,983.75,5,0.1,162.32
+ORD-2024-2064,2024-11-03,CUST-120,Consumer,North,Technology,Phones,265.05,1,0.7,-75.54
+ORD-2024-2065,2023-04-11,CUST-222,Consumer,South,Technology,Accessories,4057.16,6,0.2,365.14
+ORD-2024-2066,2024-06-11,CUST-283,Home Office,South,Technology,Phones,231.32,1,0.2,20.82
+ORD-2024-2067,2024-09-09,CUST-304,Home Office,South,Technology,Printers,695.26,2,0.0,166.86
+ORD-2024-2068,2023-11-22,CUST-258,Consumer,East,Furniture,Chairs,1705.78,8,0.2,-85.29
+ORD-2024-2069,2024-03-23,CUST-160,Consumer,South,Office Supplies,Fasteners,359.2,5,0.0,100.58
+ORD-2024-2070,2023-07-25,CUST-331,Corporate,West,Office Supplies,Paper,99.38,5,0.3,5.47
+ORD-2024-2071,2023-10-14,CUST-335,Home Office,West,Furniture,Furnishings,228.19,1,0.1,5.7
+ORD-2024-2072,2024-02-10,CUST-156,Home Office,West,Furniture,Furnishings,640.36,5,0.5,-176.1
+ORD-2024-2073,2024-09-26,CUST-179,Consumer,North,Furniture,Bookcases,1341.14,5,0.0,134.11
+ORD-2024-2074,2023-11-16,CUST-207,Home Office,South,Technology,Accessories,1755.04,5,0.0,421.21
+ORD-2024-2075,2023-09-06,CUST-162,Consumer,North,Technology,Laptops,1138.12,4,0.1,187.79
+ORD-2024-2076,2023-04-10,CUST-187,Corporate,East,Office Supplies,Binders,72.55,3,0.2,9.43
+ORD-2024-2077,2024-10-15,CUST-125,Consumer,West,Office Supplies,Storage,55.72,1,0.2,7.24
+ORD-2024-2078,2023-12-24,CUST-348,Consumer,West,Office Supplies,Paper,523.1,6,0.0,146.47
+ORD-2024-2079,2023-04-22,CUST-239,Home Office,West,Furniture,Bookcases,266.82,3,0.5,-73.38
+ORD-2024-2080,2024-06-30,CUST-159,Home Office,North,Furniture,Tables,4002.6,9,0.1,100.06
+ORD-2024-2081,2024-03-11,CUST-260,Consumer,South,Technology,Printers,3933.99,6,0.0,944.16
+ORD-2024-2082,2024-01-26,CUST-112,Home Office,West,Office Supplies,Storage,477.0,8,0.0,133.56
+ORD-2024-2083,2024-02-03,CUST-207,Consumer,South,Furniture,Furnishings,732.24,5,0.1,18.31
+ORD-2024-2084,2023-12-26,CUST-293,Corporate,South,Technology,Phones,1561.35,7,0.5,-210.78
+ORD-2024-2085,2023-11-09,CUST-122,Home Office,West,Furniture,Bookcases,1130.86,3,0.0,113.09
+ORD-2024-2086,2023-01-19,CUST-130,Consumer,North,Technology,Laptops,351.39,2,0.0,84.33
+ORD-2024-2087,2023-04-14,CUST-103,Home Office,South,Office Supplies,Art,45.34,1,0.1,9.29
+ORD-2024-2088,2024-04-11,CUST-255,Consumer,North,Technology,Accessories,5944.22,8,0.0,1426.61
+ORD-2024-2089,2024-01-09,CUST-185,Home Office,North,Furniture,Bookcases,818.96,3,0.0,81.9
+ORD-2024-2090,2023-08-21,CUST-325,Home Office,East,Technology,Laptops,964.07,6,0.2,86.77
+ORD-2024-2091,2023-12-31,CUST-264,Home Office,East,Office Supplies,Fasteners,392.95,7,0.2,51.08
+ORD-2024-2092,2024-10-10,CUST-251,Corporate,East,Office Supplies,Fasteners,172.2,3,0.0,48.22
+ORD-2024-2093,2024-04-18,CUST-127,Consumer,East,Furniture,Bookcases,290.47,4,0.7,-123.45
+ORD-2024-2094,2023-11-19,CUST-160,Corporate,East,Technology,Phones,2531.32,7,0.0,607.52
+ORD-2024-2095,2024-01-07,CUST-328,Consumer,West,Furniture,Furnishings,991.7,9,0.1,24.79
+ORD-2024-2096,2023-05-22,CUST-313,Home Office,West,Office Supplies,Art,177.38,4,0.2,23.06
+ORD-2024-2097,2023-12-21,CUST-100,Consumer,West,Technology,Phones,765.22,4,0.3,11.48
+ORD-2024-2098,2023-01-19,CUST-291,Consumer,North,Technology,Phones,3624.84,7,0.0,869.96
+ORD-2024-2099,2024-11-13,CUST-128,Consumer,North,Technology,Laptops,1558.56,4,0.0,374.05
+ORD-2024-2100,2024-02-12,CUST-116,Consumer,North,Furniture,Chairs,757.34,3,0.3,-94.67
+ORD-2024-2101,2024-01-02,CUST-157,Consumer,South,Furniture,Furnishings,522.25,2,0.1,13.06
+ORD-2024-2102,2023-12-10,CUST-232,Corporate,North,Office Supplies,Art,744.07,8,0.1,152.53
+ORD-2024-2103,2024-01-11,CUST-210,Consumer,North,Technology,Printers,370.72,1,0.0,88.97
+ORD-2024-2104,2023-09-15,CUST-153,Corporate,North,Furniture,Bookcases,800.5,6,0.0,80.05
+ORD-2024-2105,2023-04-09,CUST-283,Consumer,South,Furniture,Furnishings,325.04,1,0.0,32.5
+ORD-2024-2106,2024-06-02,CUST-268,Consumer,East,Furniture,Bookcases,1661.1,5,0.2,-83.06
+ORD-2024-2107,2024-02-17,CUST-220,Consumer,West,Office Supplies,Fasteners,62.04,2,0.1,12.72
+ORD-2024-2108,2024-04-14,CUST-235,Consumer,East,Technology,Phones,6805.65,9,0.1,1122.93
+ORD-2024-2109,2023-06-04,CUST-302,Consumer,North,Technology,Printers,4132.46,8,0.3,61.99
+ORD-2024-2110,2024-05-15,CUST-274,Corporate,East,Furniture,Bookcases,930.36,2,0.0,93.04
+ORD-2024-2111,2023-03-12,CUST-196,Consumer,North,Office Supplies,Paper,56.49,1,0.5,-5.37
+ORD-2024-2112,2023-08-19,CUST-295,Consumer,North,Office Supplies,Paper,428.87,9,0.0,120.08
+ORD-2024-2113,2023-10-12,CUST-260,Consumer,East,Technology,Printers,4744.19,9,0.0,1138.61
+ORD-2024-2114,2023-02-24,CUST-222,Consumer,North,Office Supplies,Binders,339.56,4,0.1,69.61
+ORD-2024-2115,2024-09-19,CUST-233,Home Office,East,Office Supplies,Art,71.1,2,0.0,19.91
+ORD-2024-2116,2023-06-05,CUST-188,Home Office,North,Technology,Accessories,701.24,1,0.0,168.3
+ORD-2024-2117,2023-01-28,CUST-225,Corporate,East,Furniture,Furnishings,1611.24,7,0.3,-201.4
+ORD-2024-2118,2024-12-06,CUST-139,Consumer,East,Furniture,Furnishings,1814.22,6,0.1,45.36
+ORD-2024-2119,2023-02-15,CUST-139,Consumer,South,Office Supplies,Binders,475.54,9,0.5,-45.18
+ORD-2024-2120,2023-07-11,CUST-186,Consumer,West,Technology,Phones,1434.15,4,0.0,344.2
+ORD-2024-2121,2023-01-04,CUST-186,Consumer,West,Furniture,Chairs,2363.17,6,0.1,59.08
+ORD-2024-2122,2024-07-19,CUST-236,Consumer,East,Technology,Accessories,4607.64,9,0.3,69.11
+ORD-2024-2123,2024-06-14,CUST-132,Corporate,East,Furniture,Bookcases,245.47,1,0.0,24.55
+ORD-2024-2124,2024-02-04,CUST-110,Consumer,East,Technology,Laptops,5155.82,9,0.1,850.71
+ORD-2024-2125,2024-03-16,CUST-256,Home Office,South,Furniture,Bookcases,531.51,2,0.1,13.29
+ORD-2024-2126,2023-05-27,CUST-240,Consumer,East,Technology,Accessories,411.04,5,0.7,-117.15
+ORD-2024-2127,2024-02-10,CUST-339,Corporate,East,Technology,Laptops,6391.8,9,0.1,1054.65
+ORD-2024-2128,2023-08-05,CUST-324,Corporate,North,Furniture,Bookcases,1872.98,8,0.0,187.3
+ORD-2024-2129,2024-10-20,CUST-150,Home Office,North,Technology,Laptops,1932.62,3,0.0,463.83
+ORD-2024-2130,2023-03-23,CUST-211,Consumer,East,Furniture,Bookcases,1677.38,4,0.0,167.74
+ORD-2024-2131,2023-11-03,CUST-345,Corporate,North,Technology,Laptops,2161.71,4,0.0,518.81
+ORD-2024-2132,2024-09-01,CUST-271,Consumer,West,Office Supplies,Paper,587.44,5,0.0,164.48
+ORD-2024-2133,2024-04-22,CUST-206,Home Office,East,Furniture,Chairs,939.15,2,0.0,93.92
+ORD-2024-2134,2023-01-30,CUST-198,Consumer,South,Technology,Accessories,4100.08,6,0.0,984.02
+ORD-2024-2135,2024-10-26,CUST-146,Consumer,East,Office Supplies,Art,224.68,6,0.1,46.06
+ORD-2024-2136,2023-09-20,CUST-133,Consumer,West,Office Supplies,Binders,354.11,6,0.3,19.48
+ORD-2024-2137,2024-07-18,CUST-336,Consumer,North,Office Supplies,Binders,168.32,2,0.1,34.51
+ORD-2024-2138,2023-04-10,CUST-153,Consumer,West,Furniture,Chairs,2094.79,8,0.0,209.48
+ORD-2024-2139,2024-03-09,CUST-169,Consumer,West,Office Supplies,Fasteners,389.56,7,0.2,50.64
+ORD-2024-2140,2024-07-24,CUST-168,Consumer,North,Technology,Laptops,1447.78,8,0.3,21.72
+ORD-2024-2141,2023-12-22,CUST-187,Corporate,East,Technology,Laptops,489.69,3,0.1,80.8
+ORD-2024-2142,2024-03-10,CUST-265,Consumer,South,Office Supplies,Art,53.71,1,0.5,-5.1
+ORD-2024-2143,2024-11-23,CUST-250,Home Office,East,Furniture,Bookcases,146.19,1,0.2,-7.31
+ORD-2024-2144,2024-05-04,CUST-203,Corporate,East,Technology,Printers,1489.95,2,0.0,357.59
+ORD-2024-2145,2023-10-19,CUST-204,Consumer,North,Technology,Phones,2749.71,6,0.0,659.93
+ORD-2024-2146,2023-02-15,CUST-174,Corporate,North,Office Supplies,Binders,268.35,4,0.0,75.14
+ORD-2024-2147,2024-04-17,CUST-305,Consumer,East,Technology,Phones,1040.26,9,0.5,-140.44
+ORD-2024-2148,2023-09-23,CUST-234,Corporate,South,Office Supplies,Fasteners,347.61,8,0.0,97.33
+ORD-2024-2149,2023-11-12,CUST-275,Consumer,North,Technology,Laptops,1510.75,3,0.1,249.27
+ORD-2024-2150,2024-02-10,CUST-219,Consumer,North,Technology,Phones,588.56,1,0.1,97.11
+ORD-2024-2151,2024-06-08,CUST-127,Home Office,West,Technology,Phones,323.46,4,0.5,-43.67
+ORD-2024-2152,2023-12-13,CUST-242,Home Office,East,Technology,Printers,1428.81,3,0.1,235.75
+ORD-2024-2153,2023-11-15,CUST-326,Consumer,East,Furniture,Furnishings,374.34,2,0.5,-102.94
+ORD-2024-2154,2024-02-24,CUST-123,Consumer,West,Office Supplies,Binders,52.39,3,0.0,14.67
+ORD-2024-2155,2023-11-22,CUST-263,Consumer,North,Technology,Laptops,1333.18,3,0.0,319.96
+ORD-2024-2156,2024-10-09,CUST-183,Consumer,East,Office Supplies,Art,248.72,9,0.0,69.64
+ORD-2024-2157,2024-10-30,CUST-120,Consumer,West,Furniture,Tables,440.0,4,0.1,11.0
+ORD-2024-2158,2023-10-26,CUST-224,Corporate,East,Technology,Laptops,1474.81,5,0.1,243.34
+ORD-2024-2159,2023-11-21,CUST-274,Consumer,West,Technology,Phones,2354.81,7,0.0,565.15
+ORD-2024-2160,2024-08-04,CUST-102,Consumer,West,Office Supplies,Storage,225.52,4,0.1,46.23
+ORD-2024-2161,2023-08-27,CUST-149,Consumer,North,Technology,Phones,4339.93,5,0.0,1041.58
+ORD-2024-2162,2023-08-12,CUST-347,Consumer,North,Furniture,Bookcases,1769.52,8,0.0,176.95
+ORD-2024-2163,2023-07-20,CUST-256,Home Office,East,Office Supplies,Fasteners,712.87,9,0.3,39.21
+ORD-2024-2164,2024-03-15,CUST-345,Corporate,East,Office Supplies,Paper,135.42,2,0.1,27.76
+ORD-2024-2165,2024-10-11,CUST-318,Consumer,West,Office Supplies,Storage,392.3,4,0.0,109.84
+ORD-2024-2166,2023-12-30,CUST-137,Home Office,East,Office Supplies,Paper,363.25,7,0.0,101.71
+ORD-2024-2167,2024-05-28,CUST-272,Consumer,East,Furniture,Tables,1640.06,8,0.5,-451.02
+ORD-2024-2168,2024-06-06,CUST-169,Home Office,East,Technology,Laptops,430.13,3,0.5,-58.07
+ORD-2024-2169,2024-08-30,CUST-284,Corporate,West,Technology,Laptops,384.72,1,0.2,34.62
+ORD-2024-2170,2023-09-23,CUST-236,Consumer,West,Office Supplies,Art,246.0,4,0.3,13.53
+ORD-2024-2171,2024-07-02,CUST-211,Home Office,East,Technology,Accessories,4021.91,9,0.3,60.33
+ORD-2024-2172,2024-02-08,CUST-107,Consumer,North,Technology,Accessories,6989.53,9,0.0,1677.49
+ORD-2024-2173,2024-06-13,CUST-277,Consumer,West,Technology,Accessories,1500.22,8,0.0,360.05
+ORD-2024-2174,2024-01-18,CUST-303,Corporate,East,Office Supplies,Paper,844.82,8,0.0,236.55
+ORD-2024-2175,2023-02-24,CUST-236,Home Office,East,Technology,Accessories,688.43,4,0.0,165.22
+ORD-2024-2176,2024-02-21,CUST-312,Home Office,North,Furniture,Tables,1077.65,3,0.0,107.77
+ORD-2024-2177,2024-11-14,CUST-103,Consumer,East,Office Supplies,Binders,771.49,9,0.1,158.16
+ORD-2024-2178,2023-12-18,CUST-193,Home Office,North,Technology,Laptops,384.1,1,0.0,92.18
+ORD-2024-2179,2023-06-17,CUST-333,Consumer,East,Furniture,Chairs,1736.69,6,0.2,-86.83
+ORD-2024-2180,2023-08-08,CUST-155,Consumer,East,Office Supplies,Fasteners,615.5,6,0.0,172.34
+ORD-2024-2181,2024-01-31,CUST-261,Consumer,West,Furniture,Chairs,1955.56,5,0.1,48.89
+ORD-2024-2182,2023-07-16,CUST-183,Consumer,East,Office Supplies,Storage,38.36,1,0.1,7.86
+ORD-2024-2183,2023-06-15,CUST-143,Consumer,East,Technology,Printers,6153.87,7,0.0,1476.93
+ORD-2024-2184,2024-11-29,CUST-190,Corporate,North,Office Supplies,Fasteners,646.05,8,0.0,180.89
+ORD-2024-2185,2023-09-13,CUST-317,Home Office,South,Technology,Laptops,892.63,1,0.0,214.23
+ORD-2024-2186,2023-01-15,CUST-336,Consumer,East,Office Supplies,Art,272.3,3,0.0,76.24
+ORD-2024-2187,2023-09-17,CUST-106,Consumer,North,Furniture,Furnishings,1778.91,6,0.1,44.47
+ORD-2024-2188,2024-09-25,CUST-186,Corporate,East,Technology,Phones,4745.41,9,0.3,71.18
+ORD-2024-2189,2023-03-01,CUST-105,Consumer,North,Technology,Printers,730.19,4,0.0,175.25
+ORD-2024-2190,2024-08-22,CUST-181,Consumer,East,Furniture,Chairs,1733.66,7,0.1,43.34
+ORD-2024-2191,2024-11-15,CUST-294,Consumer,South,Office Supplies,Binders,123.68,7,0.0,34.63
+ORD-2024-2192,2023-04-26,CUST-109,Consumer,North,Furniture,Chairs,341.98,1,0.0,34.2
+ORD-2024-2193,2024-04-07,CUST-317,Consumer,South,Technology,Laptops,5419.25,7,0.0,1300.62
+ORD-2024-2194,2023-11-28,CUST-336,Consumer,North,Office Supplies,Art,23.22,2,0.5,-2.21
+ORD-2024-2195,2023-06-13,CUST-310,Corporate,South,Technology,Phones,1420.27,9,0.1,234.34
+ORD-2024-2196,2023-06-01,CUST-205,Consumer,East,Technology,Printers,1296.11,5,0.0,311.07
+ORD-2024-2197,2024-08-18,CUST-311,Corporate,West,Technology,Phones,605.43,2,0.1,99.9
+ORD-2024-2198,2023-12-30,CUST-289,Home Office,West,Office Supplies,Fasteners,78.77,1,0.1,16.15
+ORD-2024-2199,2024-05-26,CUST-164,Consumer,West,Technology,Laptops,1607.7,2,0.0,385.85
